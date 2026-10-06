@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 420" width="560" height="420" font-family="Helvetica, Arial, sans-serif">
+<rect width="560" height="420" fill="#ffffff"/>
+<rect x="78" y="36" width="424" height="360" fill="#eef1f3" stroke="#9aa7ad"/>
+<text x="115.0" y="28" font-size="16" text-anchor="middle" fill="#222">MW</text>
+<rect x="91.0" y="38" width="48" height="8" fill="#c9d1d5"/>
+<text x="185.0" y="28" font-size="16" text-anchor="middle" fill="#222">A</text>
+<rect x="161.0" y="38" width="48" height="8" fill="#c9d1d5"/>
+<text x="255.0" y="28" font-size="16" text-anchor="middle" fill="#222">B</text>
+<rect x="231.0" y="38" width="48" height="8" fill="#c9d1d5"/>
+<text x="325.0" y="28" font-size="16" text-anchor="middle" fill="#222">C</text>
+<rect x="301.0" y="38" width="48" height="8" fill="#c9d1d5"/>
+<text x="395.0" y="28" font-size="16" text-anchor="middle" fill="#222">D</text>
+<rect x="371.0" y="38" width="48" height="8" fill="#c9d1d5"/>
+<text x="465.0" y="28" font-size="16" text-anchor="middle" fill="#222">E</text>
+<rect x="441.0" y="38" width="48" height="8" fill="#c9d1d5"/>
+<rect x="93.0" y="69.7" width="44" height="5" rx="1.5" fill="#6b7b83"/>
+<text x="72" y="77.2" font-size="14" text-anchor="end" fill="#333">50</text>
+<rect x="93.0" y="96.9" width="44" height="5" rx="1.5" fill="#6b7b83"/>
+<text x="72" y="104.4" font-size="14" text-anchor="end" fill="#333">40</text>
+<rect x="93.0" y="132.0" width="44" height="5" rx="1.5" fill="#6b7b83"/>
+<text x="72" y="139.5" font-size="14" text-anchor="end" fill="#333">30</text>
+<rect x="93.0" y="154.2" width="44" height="5" rx="1.5" fill="#6b7b83"/>
+<text x="72" y="161.7" font-size="14" text-anchor="end" fill="#333">25</text>
+<rect x="93.0" y="181.4" width="44" height="5" rx="1.5" fill="#6b7b83"/>
+<text x="72" y="188.9" font-size="14" text-anchor="end" fill="#333">20</text>
+<rect x="93.0" y="216.4" width="44" height="5" rx="1.5" fill="#6b7b83"/>
+<text x="72" y="223.9" font-size="14" text-anchor="end" fill="#333">15</text>
+<rect x="93.0" y="265.8" width="44" height="5" rx="1.5" fill="#6b7b83"/>
+<text x="72" y="273.3" font-size="14" text-anchor="end" fill="#333">10</text>
+<rect x="93.0" y="350.3" width="44" height="5" rx="1.5" fill="#6b7b83"/>
+<text x="72" y="357.8" font-size="14" text-anchor="end" fill="#333">5</text>
+<text x="18" y="215.0" font-size="13" fill="#333" transform="rotate(-90 18 215.0)" text-anchor="middle">kDa</text>
+<rect x="163.0" y="158.2" width="44" height="7" rx="2" fill="#1d2b33"/>
+<rect x="163.0" y="327.1" width="44" height="7" rx="2" fill="#1d2b33"/>
+<rect x="233.0" y="131.0" width="44" height="7" rx="2" fill="#1d2b33"/>
+<rect x="233.0" y="158.2" width="44" height="7" rx="2" fill="#1d2b33"/>
+<rect x="303.0" y="131.0" width="44" height="7" rx="2" fill="#1d2b33"/>
+<rect x="303.0" y="223.8" width="44" height="7" rx="2" fill="#1d2b33"/>
+<rect x="303.0" y="264.8" width="44" height="7" rx="2" fill="#1d2b33"/>
+<rect x="303.0" y="327.1" width="44" height="7" rx="2" fill="#1d2b33"/>
+<rect x="373.0" y="131.0" width="44" height="7" rx="2" fill="#1d2b33"/>
+<rect x="443.0" y="131.0" width="44" height="7" rx="2" fill="#1d2b33"/>
+<rect x="443.0" y="158.2" width="44" height="7" rx="2" fill="#1d2b33"/>
+<rect x="443.0" y="327.1" width="44" height="7" rx="2" fill="#1d2b33"/>
+</svg>

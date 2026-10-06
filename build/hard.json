@@ -1,0 +1,1000 @@
+[
+ {
+  "id": "v2-q8-1",
+  "stem": 8,
+  "level": "hard",
+  "vi": 1,
+  "vn": 4,
+  "week": 2,
+  "lo": "W2: chemical interactions shape proteins; four levels of structure and what stabilises each",
+  "topic": "Quaternary structure: what breaks an interface",
+  "q": "Enzyme D, from a gut bacterium, is a homodimer. Each subunit is a single polypeptide chain of 310 amino acids. Where the two subunits contact each other, the R group of lysine 88 on one subunit forms an ionic bond with the R group of aspartate 142 on the other subunit. Each subunit's fold is held by a hydrophobic core and hydrogen bonds, and Enzyme D has no disulfide bonds. The structures of the named amino acids are shown below.\n\nThe wild-type Enzyme D is incubated under each of the following conditions. Which is most likely to cause the dimers to separate into monomers, while the monomers remain folded?",
+  "o": [
+   "Boiling in SDS",
+   "Adding trypsin, which hydrolyzes peptide bonds",
+   "Adding a high concentration of NaCl",
+   "Heating to 95 °C without SDS"
+  ],
+  "a": 2,
+  "why": "The interface is one ionic bond between a positive R group (lysine's amine) and a negative R group (aspartate's carboxyl). Lots of dissolved ions crowd around those charges and shield them from each other, so the subunits let go, while the hydrophobic core and hydrogen bonds inside each subunit stay intact. Note: high salt is the standard chemistry answer; it was not in the course handouts.",
+  "om": [
+   "Separates AND unfolds: SDS plus heat disrupts the noncovalent interactions inside each subunit too.",
+   "Confuses separating subunits with cutting the backbone. Peptide bonds are inside each chain, not between the subunits.",
+   "Correct. Salt shields the opposite charges and weakens the ionic bond at the interface without touching the fold.",
+   "Heat is not selective. It disrupts the weak interactions that hold each subunit's tertiary structure, so the monomers unfold."
+  ],
+  "flip": "If the interface had been a disulfide bond, salt would do nothing and the answer would be a reducing agent.",
+  "fig": {
+   "src": "fig/v2/q8-1.svg",
+   "alt": "Skeletal structures, neutral form, alphabetical: aspartate (side chain CH2-COOH) and lysine (side chain four CH2 groups ending in NH2)."
+  }
+ },
+ {
+  "id": "v2-q8-2",
+  "stem": 8,
+  "level": "hard",
+  "vi": 2,
+  "vn": 4,
+  "week": 2,
+  "lo": "W2: chemical interactions shape proteins; four levels of structure and what stabilises each",
+  "topic": "Quaternary structure: what breaks an interface",
+  "q": "Enzyme D, from a gut bacterium, is a homodimer. Each subunit is a single polypeptide chain of 310 amino acids. Where the two subunits contact each other, the R group of cysteine 88 on one subunit forms a disulfide bond with the R group of cysteine 142 on the other subunit. These cross-subunit disulfides are the only disulfide bonds in the enzyme. Each subunit's fold is held by a hydrophobic core and hydrogen bonds. The structures of the named amino acids are shown below.\n\nThe wild-type Enzyme D is incubated under each of the following conditions. Which is most likely to cause the dimers to separate into monomers, while the monomers remain folded?",
+  "o": [
+   "Adding a high concentration of NaCl",
+   "Boiling in SDS",
+   "Lowering the pH to 3",
+   "Adding a reducing agent (such as DTT) at room temperature, without SDS",
+   "Adding trypsin, which hydrolyzes peptide bonds"
+  ],
+  "a": 3,
+  "why": "Two cysteine R groups joined across the interface form a disulfide, which is a covalent bond. Only a reducing agent breaks it. Because each subunit's fold relies on noncovalent interactions alone, breaking the disulfide releases monomers that are still folded.",
+  "om": [
+   "Salt shields charges, so it weakens ionic bonds. A disulfide is covalent, and salt does not break it.",
+   "Course trap: SDS plus heat unfolds each subunit but does NOT break disulfide bonds. The chains stay linked AND unfold.",
+   "pH changes the charge on acidic and basic R groups, which matters for ionic bonds, not covalent disulfides.",
+   "Correct. The reducing agent breaks the S-S bond, and nothing else holds the subunits together.",
+   "Cutting peptide bonds chops the chains apart; it does not release intact folded monomers."
+  ],
+  "flip": "If the question had said 'boiled in SDS with a reducing agent', the dimers would separate but the monomers would also unfold.",
+  "fig": {
+   "src": "fig/v2/q8-2.svg",
+   "alt": "Skeletal structure, neutral form: cysteine (side chain CH2-SH)."
+  }
+ },
+ {
+  "id": "v2-q8-3",
+  "stem": 8,
+  "level": "hard",
+  "vi": 3,
+  "vn": 4,
+  "week": 2,
+  "lo": "W2: chemical interactions shape proteins; four levels of structure and what stabilises each",
+  "topic": "Quaternary structure: what breaks an interface",
+  "q": "Enzyme D, from a gut bacterium, is a homodimer. Each subunit is a single polypeptide chain of 310 amino acids. Where the two subunits contact each other, the R group of aspartate 88 on one subunit forms an ionic bond with the R group of arginine 142 on the other subunit. Each subunit's fold is held by a hydrophobic core and hydrogen bonds. The structures of the named amino acids are shown below.\n\nA lab member says: \"Add DTT, a reducing agent. It breaks the bond between the subunits.\" Which condition is actually most likely to separate the dimers into monomers, while the monomers remain folded?",
+  "o": [
+   "Adding DTT, as suggested",
+   "Adding a high concentration of KCl",
+   "Boiling in SDS with DTT",
+   "Adding an enzyme that hydrolyzes glycosidic linkages"
+  ],
+  "a": 1,
+  "why": "Aspartate's R group is a carboxyl (negative) and arginine's ends in a nitrogen-rich group (positive), so the interface is an ionic bond. A reducing agent only breaks disulfide (S-S) bonds. High salt shields opposite charges from each other, so it weakens ionic bonds specifically and leaves the fold alone. High salt is the standard chemistry answer; it was not in the course handouts.",
+  "om": [
+   "Reducing agents break disulfides only. The interface here is ionic, so DTT does nothing to it.",
+   "Correct. Dissolved K+ and Cl- shield the charged R groups and weaken the ionic bond at the interface.",
+   "This separates the subunits, but SDS plus heat also unfolds every monomer.",
+   "Wrong macromolecule: glycosidic linkages join sugars, not amino acids."
+  ],
+  "flip": "If positions 88 and 142 had both been cysteine, DTT would have been the right call.",
+  "fig": {
+   "src": "fig/v2/q8-3.svg",
+   "alt": "Skeletal structures, neutral form, alphabetical: arginine and aspartate."
+  }
+ },
+ {
+  "id": "v2-q8-4",
+  "stem": 8,
+  "level": "hard",
+  "vi": 4,
+  "vn": 4,
+  "week": 2,
+  "lo": "W2: chemical interactions shape proteins; four levels of structure and what stabilises each",
+  "topic": "Quaternary structure: what breaks an interface",
+  "q": "Enzyme D, from a gut bacterium, is a homodimer. Each subunit is a single polypeptide chain of 310 amino acids. Where the two subunits contact each other, the R group of glutamate 88 on one subunit forms an ionic bond with the R group of lysine 142 on the other subunit. Enzyme D contains no disulfide bonds. Each subunit's fold is held by a hydrophobic core and hydrogen bonds. The structures of the named amino acids are shown below.\n\nThe wild-type Enzyme D is incubated under each of the following conditions. Which is most likely to separate the dimers into monomers AND unfold the monomers?",
+  "o": [
+   "Adding a high concentration of NaCl",
+   "Adding a reducing agent at room temperature",
+   "Adding trypsin, which hydrolyzes peptide bonds",
+   "Boiling in SDS"
+  ],
+  "a": 3,
+  "why": "This one reverses the usual logic: you want everything noncovalent gone. SDS plus heat disrupts the ionic bond at the interface and the hydrophobic core and hydrogen bonds inside each subunit. Enzyme D has no disulfides, so nothing covalent holds the chains together or in shape.",
+  "om": [
+   "Reverses the logic: salt separates the dimers but leaves each monomer folded. This question wants both.",
+   "There are no disulfides in Enzyme D, so a reducing agent has nothing to break.",
+   "Cutting peptide bonds destroys the chains rather than giving intact, unfolded monomers.",
+   "Correct. SDS plus heat breaks the interface and unfolds each subunit."
+  ],
+  "flip": "If the interface had been a disulfide, boiling in SDS would unfold the subunits but leave them linked; you would need a reducing agent too.",
+  "fig": {
+   "src": "fig/v2/q8-4.svg",
+   "alt": "Skeletal structures, neutral form, alphabetical: glutamate and lysine."
+  }
+ },
+ {
+  "id": "v2-q10-1",
+  "stem": 10,
+  "level": "hard",
+  "vi": 1,
+  "vn": 5,
+  "week": 2,
+  "lo": "W2: orient an amino acid and polypeptide; condensation vs hydrolysis",
+  "topic": "Protease cut sites and peptide orientation",
+  "q": "A newly discovered protease, snipase, hydrolyzes peptide bonds on the C-terminal side of basic amino acids. If the tetrapeptide shown below is fully digested by snipase, what products form? (Residues are numbered 1 to 4 starting from the N-terminus.)",
+  "o": [
+   "Residue 1 as a free amino acid, plus a tripeptide of residues 2-4",
+   "Two dipeptides: residues 1-2 and residues 3-4",
+   "A tripeptide of residues 1-3, plus residue 4 as a free amino acid",
+   "No change: the tetrapeptide stays intact",
+   "Four free amino acids"
+  ],
+  "a": 1,
+  "why": "Find the N-terminus (the free amino group) and number from there. Residue 2's R group ends in an extra amine, so it is basic. Its C-terminal side is the peptide bond between residues 2 and 3. One cut gives two dipeptides.",
+  "om": [
+   "Cut on the N-terminal side of the basic residue. The question says C-terminal side.",
+   "Correct. One cut, after residue 2.",
+   "Cut beside the residue with a ring (aromatic) instead of the one with the extra amine (basic).",
+   "Missed the basic residue: the extra amine on residue 2's R group marks it as basic.",
+   "Snipase cuts only next to basic residues, not every peptide bond."
+  ],
+  "flip": "If snipase cut on the N-terminal side of basic residues, the cut would fall between residues 1 and 2: a free amino acid plus a tripeptide.",
+  "fig": {
+   "src": "fig/v2/q10-1.svg",
+   "alt": "Bond-line tetrapeptide, neutral form, free amino group at one end and free carboxyl group at the other. No residue labels."
+  }
+ },
+ {
+  "id": "v2-q10-2",
+  "stem": 10,
+  "level": "hard",
+  "vi": 2,
+  "vn": 5,
+  "week": 2,
+  "lo": "W2: orient an amino acid and polypeptide; condensation vs hydrolysis",
+  "topic": "Protease cut sites and peptide orientation",
+  "q": "A newly discovered protease, snipase, hydrolyzes peptide bonds on the N-terminal side of basic amino acids. If the tetrapeptide shown below is fully digested by snipase, what products form? (Residues are numbered 1 to 4 starting from the N-terminus.)",
+  "o": [
+   "Two dipeptides: residues 1-2 and residues 3-4",
+   "A tripeptide of residues 1-3, plus residue 4 as a free amino acid",
+   "Residue 1 as a free amino acid, plus a tripeptide of residues 2-4",
+   "No change: the tetrapeptide stays intact"
+  ],
+  "a": 2,
+  "why": "The free amino group marks residue 1. Residue 2's R group ends in a nitrogen-rich group, so it is basic. Its N-terminal side is the bond between residues 1 and 2, so residue 1 is released and residues 2-4 stay together.",
+  "om": [
+   "That is the C-terminal side of the basic residue. Snipase here cuts on the N-terminal side.",
+   "Numbered from the wrong end. Read from the C-terminus, the same cut looks like this.",
+   "Correct. One cut, between residues 1 and 2.",
+   "Missed the basic R group on residue 2."
+  ],
+  "flip": "If snipase cut on the C-terminal side instead, the cut would fall between residues 2 and 3, giving two dipeptides.",
+  "fig": {
+   "src": "fig/v2/q10-2.svg",
+   "alt": "Bond-line tetrapeptide, neutral form, free amino group at one end and free carboxyl group at the other. No residue labels."
+  }
+ },
+ {
+  "id": "v2-q10-3",
+  "stem": 10,
+  "level": "hard",
+  "vi": 3,
+  "vn": 5,
+  "week": 2,
+  "lo": "W2: orient an amino acid and polypeptide; condensation vs hydrolysis",
+  "topic": "Protease cut sites and peptide orientation",
+  "q": "A newly discovered protease, snipase, hydrolyzes peptide bonds on the C-terminal side of aromatic amino acids. If the tetrapeptide shown below is fully digested by snipase, what products form? (Residues are numbered 1 to 4 starting from the N-terminus.)",
+  "o": [
+   "Residue 1 as a free amino acid, plus a tripeptide of residues 2-4",
+   "A tripeptide of residues 1-3, plus residue 4 as a free amino acid",
+   "No change: the tetrapeptide stays intact",
+   "Two dipeptides: residues 1-2 and residues 3-4"
+  ],
+  "a": 3,
+  "why": "Aromatic means a ring in the R group. Only residue 2 has one. Its C-terminal side is the bond between residues 2 and 3, so one cut gives two dipeptides. Residue 4 is large and nonpolar, but it has no ring, so it is not aromatic.",
+  "om": [
+   "That is the N-terminal side of the aromatic residue. The question says C-terminal side.",
+   "Treated the large nonpolar residue 4 as aromatic. Aromatic means a ring, not just hydrophobic.",
+   "Missed the ring on residue 2.",
+   "Correct. One cut, after residue 2."
+  ],
+  "flip": "If the aromatic residue had been residue 4, its C-terminal side would have no peptide bond and nothing would be cut.",
+  "fig": {
+   "src": "fig/v2/q10-3.svg",
+   "alt": "Bond-line tetrapeptide, neutral form, free amino group at one end and free carboxyl group at the other. No residue labels."
+  }
+ },
+ {
+  "id": "v2-q10-4",
+  "stem": 10,
+  "level": "hard",
+  "vi": 4,
+  "vn": 5,
+  "week": 2,
+  "lo": "W2: orient an amino acid and polypeptide; condensation vs hydrolysis",
+  "topic": "Protease cut sites and peptide orientation",
+  "q": "A newly discovered protease, snipase, hydrolyzes peptide bonds on the C-terminal side of basic amino acids. If the tetrapeptide shown below is fully digested by snipase, what products form? (Residues are numbered 1 to 4 starting from the N-terminus.)",
+  "o": [
+   "A tripeptide of residues 1-3, plus residue 4 as a free amino acid",
+   "No change: the tetrapeptide stays intact",
+   "Residue 1 as a free amino acid, plus a tripeptide of residues 2-4",
+   "Two dipeptides: residues 1-2 and residues 3-4",
+   "Four free amino acids"
+  ],
+  "a": 1,
+  "why": "Number from the free amino group. The only basic R group (ending in an extra amine) belongs to residue 4, the C-terminal residue, whose carboxyl group is free. There is no peptide bond on its C-terminal side, so snipase cannot cut. Same logic as trypsin leaving the last residue of Lys-Tyr-Asp-Lys alone.",
+  "om": [
+   "That is a cut on the N-terminal side of the basic residue.",
+   "Correct. The basic residue is the last residue; nothing lies on its C-terminal side.",
+   "Numbered from the wrong end: the basic residue sits at the C-terminus, not the N-terminus.",
+   "There is no basic residue at position 2.",
+   "Snipase cuts only beside basic residues, not every peptide bond."
+  ],
+  "flip": "If snipase cut on the N-terminal side of basic residues, it would cut between residues 3 and 4: a tripeptide plus a free amino acid.",
+  "fig": {
+   "src": "fig/v2/q10-4.svg",
+   "alt": "Bond-line tetrapeptide, neutral form, free amino group at one end and free carboxyl group at the other. No residue labels."
+  }
+ },
+ {
+  "id": "v2-q10-5",
+  "stem": 10,
+  "level": "hard",
+  "vi": 5,
+  "vn": 5,
+  "week": 2,
+  "lo": "W2: orient an amino acid and polypeptide; condensation vs hydrolysis",
+  "topic": "Protease cut sites and peptide orientation",
+  "q": "A newly discovered protease, snipase, hydrolyzes peptide bonds on the C-terminal side of basic amino acids. If the tetrapeptide shown below is fully digested by snipase, what products form? (Residues are numbered 1 to 4 starting from the N-terminus.)",
+  "o": [
+   "Residue 1 as a free amino acid, plus a tripeptide of residues 2-4",
+   "Two dipeptides: residues 1-2 and residues 3-4",
+   "Residues 1 and 4 as free amino acids, plus a dipeptide of residues 2-3",
+   "A tripeptide of residues 1-3, plus residue 4 as a free amino acid",
+   "Four free amino acids"
+  ],
+  "a": 2,
+  "why": "Two residues are basic: residue 1 (R group ending in a nitrogen-rich group) and residue 3 (R group ending in an amine). Cutting on the C-terminal side of each breaks the 1-2 bond and the 3-4 bond. That releases residues 1 and 4 and leaves 2-3 as a dipeptide.",
+  "om": [
+   "Found only the first basic residue. Residue 3 is basic too.",
+   "That is cutting on the N-terminal side of the basic residues.",
+   "Correct. Two cuts: after residue 1 and after residue 3.",
+   "Found only residue 3 as basic and missed residue 1.",
+   "The bond between residues 2 and 3 is not on the C-terminal side of a basic residue, so it stays."
+  ],
+  "flip": "If snipase cut on the N-terminal side instead, only the bond between residues 2 and 3 would be cut, giving two dipeptides.",
+  "fig": {
+   "src": "fig/v2/q10-5.svg",
+   "alt": "Bond-line tetrapeptide, neutral form, free amino group at one end and free carboxyl group at the other. No residue labels."
+  }
+ },
+ {
+  "id": "v2-q11-1",
+  "stem": 11,
+  "level": "hard",
+  "vi": 1,
+  "vn": 3,
+  "week": 2,
+  "lo": "W2: SDS-PAGE",
+  "topic": "SDS-PAGE: disulfides and reducing agent",
+  "q": "Hormone H is made as a single, inactive polypeptide called pro-H (30 kDa). To activate it, an enzyme hydrolyzes two peptide bonds, removing a 6 kDa segment from the middle of the chain. The two remaining pieces (14 kDa and 10 kDa) stay attached to each other by a single disulfide bond, forming mature H. This is the only disulfide bond present in any form of Hormone H. The released 6 kDa segment does not associate with mature H but persists in the cell and is not degraded.\n\nSamples were analyzed by SDS-PAGE and stained so that all H-derived polypeptides are visible. The gel below shows a molecular weight ladder and five possible band patterns (lanes A to E).\n\nPurified mature H is boiled in SDS with a reducing agent. Which lane best represents the expected result?",
+  "o": [
+   "Lane A",
+   "Lane B",
+   "Lane C",
+   "Lane D",
+   "Lane E"
+  ],
+  "a": 3,
+  "why": "Mature H is two chains (14 and 10 kDa) held by one disulfide. SDS plus heat unfolds them and the reducing agent breaks the disulfide, so the two chains run separately: two bands, at 14 and 10 kDa. The segment was removed before purification, so it is absent.",
+  "om": [
+   "Forgot that the reducing agent breaks the disulfide holding the two pieces together.",
+   "Mature H is not pro-H: the middle segment has been cut out.",
+   "The sample is purified mature H; the released segment is not in it.",
+   "Correct. Two chains, two sizes, two bands.",
+   "Kept the disulfide intact and added a segment that is not in a purified sample."
+  ],
+  "flip": "Without the reducing agent, the disulfide survives SDS and heat, so you would see one band at 24 kDa.",
+  "fig": {
+   "src": "fig/v2/q11-1.svg",
+   "alt": "SDS-PAGE gel: ladder 50, 40, 30, 25, 20, 15, 10, 5 kDa. lane A: 24 kDa; lane B: 30 kDa; lane C: 14, 10, 6 kDa; lane D: 14, 10 kDa; lane E: 24, 6 kDa"
+  }
+ },
+ {
+  "id": "v2-q11-2",
+  "stem": 11,
+  "level": "hard",
+  "vi": 2,
+  "vn": 3,
+  "week": 2,
+  "lo": "W2: SDS-PAGE",
+  "topic": "SDS-PAGE: disulfides and reducing agent",
+  "q": "Hormone H is made as a single, inactive polypeptide called pro-H (40 kDa). To activate it, an enzyme hydrolyzes two peptide bonds, removing a 8 kDa segment from the middle of the chain. The two remaining pieces (20 kDa and 12 kDa) stay attached to each other by a single disulfide bond, forming mature H. This is the only disulfide bond present in any form of Hormone H. The released 8 kDa segment does not associate with mature H but persists in the cell and is not degraded.\n\nSamples were analyzed by SDS-PAGE and stained so that all H-derived polypeptides are visible. The gel below shows a molecular weight ladder and five possible band patterns (lanes A to E).\n\nPurified mature H is boiled in SDS without a reducing agent. Which lane best represents the expected result?",
+  "o": [
+   "Lane A",
+   "Lane B",
+   "Lane C",
+   "Lane D",
+   "Lane E"
+  ],
+  "a": 2,
+  "why": "SDS and heat unfold proteins but do not break disulfide bonds; only a reducing agent does. Mature H's two pieces stay linked, so it runs as one polypeptide of 20 + 12 = 32 kDa.",
+  "om": [
+   "Course trap: assumed SDS and heat break the disulfide. They do not.",
+   "Mature H is not pro-H: the 8 kDa segment has been removed.",
+   "Correct. One linked unit, one band at 32 kDa.",
+   "The sample is purified mature H; the segment is not in it.",
+   "Two errors: broke the disulfide without a reducing agent and added the segment."
+  ],
+  "flip": "With a reducing agent added, the disulfide breaks and you would see two bands, at 20 and 12 kDa.",
+  "fig": {
+   "src": "fig/v2/q11-2.svg",
+   "alt": "SDS-PAGE gel: ladder 50, 40, 30, 25, 20, 15, 10, 5 kDa. lane A: 20, 12 kDa; lane B: 40 kDa; lane C: 32 kDa; lane D: 32, 8 kDa; lane E: 20, 12, 8 kDa"
+  }
+ },
+ {
+  "id": "v2-q11-3",
+  "stem": 11,
+  "level": "hard",
+  "vi": 3,
+  "vn": 3,
+  "week": 2,
+  "lo": "W2: SDS-PAGE",
+  "topic": "SDS-PAGE: band count = distinct sizes",
+  "q": "Hormone H is made as a single, inactive polypeptide called pro-H (30 kDa). To activate it, an enzyme hydrolyzes two peptide bonds, removing a 8 kDa segment from the middle of the chain. The two remaining pieces (11 kDa and 11 kDa) stay attached to each other by a single disulfide bond, forming mature H. This is the only disulfide bond present in any form of Hormone H. The released 8 kDa segment does not associate with mature H but persists in the cell and is not degraded.\n\nSamples were analyzed by SDS-PAGE and stained so that all H-derived polypeptides are visible. The gel below shows a molecular weight ladder and five possible band patterns (lanes A to E).\n\nPurified mature H is boiled in SDS with a reducing agent. Which lane best represents the expected result?",
+  "o": [
+   "Lane A",
+   "Lane B",
+   "Lane C",
+   "Lane D",
+   "Lane E"
+  ],
+  "a": 1,
+  "why": "The reducing agent breaks the disulfide, so the two pieces run separately. But they are the same size, and SDS-PAGE sorts only by size, so both land in one band at 11 kDa. Number of bands = number of different sizes, not number of chains.",
+  "om": [
+   "Forgot that the reducing agent breaks the disulfide.",
+   "Correct. Two chains, one size, one band (holding twice the protein).",
+   "The sample is purified mature H; the 8 kDa segment is not in it.",
+   "Kept the disulfide intact and added a segment that is not in the sample.",
+   "That is pro-H, which has been processed."
+  ],
+  "flip": "If the pieces had been 12 and 10 kDa instead, you would see two bands.",
+  "fig": {
+   "src": "fig/v2/q11-3.svg",
+   "alt": "SDS-PAGE gel: ladder 50, 40, 30, 25, 20, 15, 10, 5 kDa. lane A: 22 kDa; lane B: 11 kDa; lane C: 11, 8 kDa; lane D: 22, 8 kDa; lane E: 30 kDa"
+  }
+ },
+ {
+  "id": "v2-q12-1",
+  "stem": 12,
+  "level": "hard",
+  "vi": 1,
+  "vn": 5,
+  "week": 2,
+  "lo": "W2: SDS-PAGE",
+  "topic": "SDS-PAGE: mixtures during processing",
+  "q": "Hormone H is made as a single, inactive polypeptide called pro-H (30 kDa). To activate it, an enzyme hydrolyzes two peptide bonds, removing a 6 kDa segment from the middle of the chain. The two remaining pieces (14 kDa and 10 kDa) stay attached to each other by a single disulfide bond, forming mature H. This is the only disulfide bond present in any form of Hormone H. The released 6 kDa segment does not associate with mature H but persists in the cell and is not degraded.\n\nSamples were analyzed by SDS-PAGE and stained so that all H-derived polypeptides are visible. The gel below shows a molecular weight ladder and five possible band patterns (lanes A to E).\n\nA sample is taken halfway through the activation reaction, when only some of the pro-H has been processed (assume both peptide bonds in any one pro-H molecule are cut at the same moment). It is boiled in SDS without a reducing agent. Which lane best represents the expected result?",
+  "o": [
+   "Lane A",
+   "Lane B",
+   "Lane C",
+   "Lane D",
+   "Lane E"
+  ],
+  "a": 4,
+  "why": "Halfway means three kinds of H polypeptide are present: unprocessed pro-H (30), mature H (14 + 10 held by the disulfide, which SDS and heat do not break, so 24) and the released segment (6), which persists. Three sizes, three bands.",
+  "om": [
+   "Forgot the pro-H that has not been processed yet.",
+   "Forgot the 6 kDa segment, which persists and is not degraded.",
+   "Broke the disulfide without a reducing agent. SDS and heat leave it intact.",
+   "That is the start of the reaction, before any processing.",
+   "Correct. Pro-H, mature H and the segment."
+  ],
+  "flip": "With a reducing agent, mature H would split into 14 and 10, giving four bands: 30, 14, 10 and 6.",
+  "fig": {
+   "src": "fig/v2/q12-1.svg",
+   "alt": "SDS-PAGE gel: ladder 50, 40, 30, 25, 20, 15, 10, 5 kDa. lane A: 24, 6 kDa; lane B: 30, 24 kDa; lane C: 30, 14, 10, 6 kDa; lane D: 30 kDa; lane E: 30, 24, 6 kDa"
+  }
+ },
+ {
+  "id": "v2-q12-2",
+  "stem": 12,
+  "level": "hard",
+  "vi": 2,
+  "vn": 5,
+  "week": 2,
+  "lo": "W2: SDS-PAGE",
+  "topic": "SDS-PAGE: mixtures during processing",
+  "q": "Hormone H is made as a single, inactive polypeptide called pro-H (40 kDa). To activate it, an enzyme hydrolyzes two peptide bonds, removing a 8 kDa segment from the middle of the chain. The two remaining pieces (20 kDa and 12 kDa) stay attached to each other by a single disulfide bond, forming mature H. This is the only disulfide bond present in any form of Hormone H. The released 8 kDa segment does not associate with mature H but persists in the cell and is not degraded.\n\nSamples were analyzed by SDS-PAGE and stained so that all H-derived polypeptides are visible. The gel below shows a molecular weight ladder and five possible band patterns (lanes A to E).\n\nA sample is taken halfway through the activation reaction, when only some of the pro-H has been processed (assume both peptide bonds in any one pro-H molecule are cut at the same moment). It is boiled in SDS with a reducing agent. Which lane best represents the expected result?",
+  "o": [
+   "Lane A",
+   "Lane B",
+   "Lane C",
+   "Lane D",
+   "Lane E"
+  ],
+  "a": 0,
+  "why": "Halfway: pro-H, mature H and the segment are all present. The reducing agent breaks mature H's disulfide, so its pieces run separately at 20 and 12. Pro-H is one continuous chain; breaking its disulfide does not change its size, so it stays at 40. The 8 kDa segment persists.",
+  "om": [
+   "Correct. Pro-H, both pieces and the segment.",
+   "Ignored the reducing agent: it does break mature H's disulfide.",
+   "Forgot the pro-H that has not been processed yet.",
+   "Forgot the segment, which persists.",
+   "Forgot both the unprocessed pro-H and the segment."
+  ],
+  "flip": "Without the reducing agent, mature H would stay together at 32 kDa: bands at 40, 32 and 8.",
+  "fig": {
+   "src": "fig/v2/q12-2.svg",
+   "alt": "SDS-PAGE gel: ladder 50, 40, 30, 25, 20, 15, 10, 5 kDa. lane A: 40, 20, 12, 8 kDa; lane B: 40, 32, 8 kDa; lane C: 20, 12, 8 kDa; lane D: 40, 20, 12 kDa; lane E: 20, 12 kDa"
+  }
+ },
+ {
+  "id": "v2-q12-3",
+  "stem": 12,
+  "level": "hard",
+  "vi": 3,
+  "vn": 5,
+  "week": 2,
+  "lo": "W2: SDS-PAGE",
+  "topic": "SDS-PAGE: mixtures during processing",
+  "q": "Hormone H is made as a single, inactive polypeptide called pro-H (30 kDa). To activate it, an enzyme hydrolyzes two peptide bonds, removing a 6 kDa segment from the middle of the chain. The two remaining pieces (14 kDa and 10 kDa) stay attached to each other by a single disulfide bond, forming mature H. This is the only disulfide bond present in any form of Hormone H. The released 6 kDa segment does not associate with mature H but persists in the cell and is not degraded.\n\nSamples were analyzed by SDS-PAGE and stained so that all H-derived polypeptides are visible. The gel below shows a molecular weight ladder and five possible band patterns (lanes A to E).\n\nA sample is taken at the moment the activating enzyme is added, before any pro-H has been processed. It is boiled in SDS with a reducing agent. Which lane best represents the expected result?",
+  "o": [
+   "Lane A",
+   "Lane B",
+   "Lane C",
+   "Lane D",
+   "Lane E"
+  ],
+  "a": 2,
+  "why": "No processing has happened yet, so only pro-H exists. The reducing agent breaks disulfides, not peptide bonds, and pro-H is one continuous chain, so it runs as a single 30 kDa band.",
+  "om": [
+   "Treated the reducing agent as if it cut peptide bonds. It only breaks disulfides.",
+   "That is a fully processed sample without a reducing agent.",
+   "Correct. Only pro-H, one band.",
+   "That is a halfway sample without a reducing agent.",
+   "That is a halfway sample with a reducing agent."
+  ],
+  "flip": "At the end of the reaction with a reducing agent, you would see 14, 10 and 6 kDa bands and no pro-H.",
+  "fig": {
+   "src": "fig/v2/q12-3.svg",
+   "alt": "SDS-PAGE gel: ladder 50, 40, 30, 25, 20, 15, 10, 5 kDa. lane A: 14, 10, 6 kDa; lane B: 24, 6 kDa; lane C: 30 kDa; lane D: 30, 24, 6 kDa; lane E: 30, 14, 10, 6 kDa"
+  }
+ },
+ {
+  "id": "v2-q12-4",
+  "stem": 12,
+  "level": "hard",
+  "vi": 4,
+  "vn": 5,
+  "week": 2,
+  "lo": "W2: SDS-PAGE",
+  "topic": "SDS-PAGE: mixtures during processing",
+  "q": "Hormone H is made as a single, inactive polypeptide called pro-H (36 kDa). To activate it, an enzyme hydrolyzes two peptide bonds, removing a 10 kDa segment from the middle of the chain. The two remaining pieces (15 kDa and 11 kDa) stay attached to each other by a single disulfide bond, forming mature H. This is the only disulfide bond present in any form of Hormone H. The released 10 kDa segment does not associate with mature H but persists in the cell and is not degraded.\n\nSamples were analyzed by SDS-PAGE and stained so that all H-derived polypeptides are visible. The gel below shows a molecular weight ladder and five possible band patterns (lanes A to E).\n\nA sample is taken after the activation reaction has finished, when all of the pro-H has been processed. It is boiled in SDS without a reducing agent. Which lane best represents the expected result?",
+  "o": [
+   "Lane A",
+   "Lane B",
+   "Lane C",
+   "Lane D",
+   "Lane E"
+  ],
+  "a": 3,
+  "why": "All pro-H is processed, so none is left. Mature H stays together without a reducing agent (15 + 11 = 26). The 10 kDa segment is not degraded and is still in the sample, so it gives its own band.",
+  "om": [
+   "That is a halfway sample: no pro-H is left at the end.",
+   "Forgot the segment. The stem says it persists and is not degraded.",
+   "Broke the disulfide without a reducing agent.",
+   "Correct. Mature H plus the persisting segment.",
+   "Broke the disulfide and forgot the segment."
+  ],
+  "flip": "With a reducing agent, you would see 15, 11 and 10 kDa bands.",
+  "fig": {
+   "src": "fig/v2/q12-4.svg",
+   "alt": "SDS-PAGE gel: ladder 50, 40, 30, 25, 20, 15, 10, 5 kDa. lane A: 36, 26, 10 kDa; lane B: 26 kDa; lane C: 15, 11, 10 kDa; lane D: 26, 10 kDa; lane E: 15, 11 kDa"
+  }
+ },
+ {
+  "id": "v2-q12-5",
+  "stem": 12,
+  "level": "hard",
+  "vi": 5,
+  "vn": 5,
+  "week": 2,
+  "lo": "W2: SDS-PAGE",
+  "topic": "SDS-PAGE: mixtures during processing",
+  "q": "Hormone H is made as a single, inactive polypeptide called pro-H (32 kDa). To activate it, an enzyme hydrolyzes two peptide bonds, removing a 6 kDa segment from the middle of the chain. The two remaining pieces (16 kDa and 10 kDa) stay attached to each other by a single disulfide bond, forming mature H. This is the only disulfide bond present in any form of Hormone H. The released 6 kDa segment does not associate with mature H but persists in the cell and is not degraded.\n\nSamples were analyzed by SDS-PAGE and stained so that all H-derived polypeptides are visible. The gel below shows a molecular weight ladder and five possible band patterns (lanes A to E).\n\nA sample is taken halfway through the activation reaction, when only some of the pro-H has been processed (assume both peptide bonds in any one pro-H molecule are cut at the same moment). It is boiled in SDS with a reducing agent. Which lane best represents the expected result?",
+  "o": [
+   "Lane A",
+   "Lane B",
+   "Lane C",
+   "Lane D",
+   "Lane E"
+  ],
+  "a": 1,
+  "why": "A reducing agent breaks disulfide bonds, not peptide bonds. Pro-H is a single continuous chain, so even with its disulfide broken it still runs at 32 kDa. Mature H splits into 16 and 10, and the 6 kDa segment persists.",
+  "om": [
+   "Ignored the reducing agent: mature H's disulfide breaks.",
+   "Correct. Pro-H at full size, both pieces and the segment.",
+   "Forgot the pro-H that has not been processed yet.",
+   "Forgot the segment, which persists.",
+   "Shrank pro-H: a reducing agent cannot remove the segment from pro-H, because that takes hydrolysis of peptide bonds."
+  ],
+  "flip": "Without a reducing agent: 32, 26 and 6 kDa.",
+  "fig": {
+   "src": "fig/v2/q12-5.svg",
+   "alt": "SDS-PAGE gel: ladder 50, 40, 30, 25, 20, 15, 10, 5 kDa. lane A: 32, 26, 6 kDa; lane B: 32, 16, 10, 6 kDa; lane C: 16, 10, 6 kDa; lane D: 32, 16, 10 kDa; lane E: 26, 16, 10, 6 kDa"
+  }
+ },
+ {
+  "id": "v2-q15-1",
+  "stem": 15,
+  "level": "hard",
+  "vi": 1,
+  "vn": 5,
+  "week": 3,
+  "lo": "W3: classify monosaccharides",
+  "topic": "Ring sugars: aldose or ketose, how many carbons",
+  "q": "Glucose is shown below in its ringed form. How would it be classified in its linear form?",
+  "o": [
+   "Aldopentose",
+   "Aldohexose",
+   "Ketopentose",
+   "Ketohexose"
+  ],
+  "a": 1,
+  "why": "Count every carbon: five in the ring plus the CH2OH outside it = 6, a hexose. The anomeric carbon (bonded to both the ring O and an OH) also carries an H, so in the linear form it was the aldehyde carbon (C1). Aldohexose.",
+  "om": [
+   "Counted only the ring carbons and missed the CH2OH carbon outside the ring.",
+   "Correct. 6 carbons, aldehyde at the anomeric carbon.",
+   "Two errors: the anomeric carbon has an H, and there are 6 carbons.",
+   "The anomeric carbon carries an H, so it came from an aldehyde, not a ketone."
+  ],
+  "flip": "If the anomeric carbon had carried a CH2OH instead of an H, it would have been a ketose.",
+  "fig": {
+   "src": "fig/v2/q15-1.svg",
+   "alt": "Ring structure with every carbon labelled with its hydrogens, the ring oxygen, every OH and every CH2OH. Stereochemistry not shown."
+  }
+ },
+ {
+  "id": "v2-q15-2",
+  "stem": 15,
+  "level": "hard",
+  "vi": 2,
+  "vn": 5,
+  "week": 3,
+  "lo": "W3: classify monosaccharides",
+  "topic": "Ring sugars: aldose or ketose, how many carbons",
+  "q": "Fructose is shown below in its ringed form. How would it be classified in its linear form?",
+  "o": [
+   "Aldopentose",
+   "Aldohexose",
+   "Ketopentose",
+   "Ketohexose"
+  ],
+  "a": 3,
+  "why": "The five-membered ring holds four carbons and the ring O. Two CH2OH groups sit outside it, giving 6 carbons. The anomeric carbon carries an OH and a CH2OH but no H, so it was a ketone carbon (C2). Ketohexose.",
+  "om": [
+   "Ring-size trap, plus the anomeric carbon has no H. A five-membered ring is not five carbons.",
+   "The anomeric carbon has no H, so it was a ketone, not an aldehyde.",
+   "Ring-size trap: the ring has 4 carbons and two CH2OH carbons sit outside it, so 6 in total.",
+   "Correct. 6 carbons, ketone at the anomeric carbon."
+  ],
+  "flip": "If one of the carbons outside the ring were missing, it would have been a ketopentose.",
+  "fig": {
+   "src": "fig/v2/q15-2.svg",
+   "alt": "Ring structure with every carbon labelled with its hydrogens, the ring oxygen, every OH and every CH2OH. Stereochemistry not shown."
+  }
+ },
+ {
+  "id": "v2-q15-3",
+  "stem": 15,
+  "level": "hard",
+  "vi": 3,
+  "vn": 5,
+  "week": 3,
+  "lo": "W3: classify monosaccharides",
+  "topic": "Ring sugars: aldose or ketose, how many carbons",
+  "q": "Ribose is shown below in its ringed form. How would it be classified in its linear form?",
+  "o": [
+   "Aldopentose",
+   "Aldohexose",
+   "Ketopentose",
+   "Ketohexose"
+  ],
+  "a": 0,
+  "why": "Four ring carbons plus one CH2OH outside = 5 carbons. The anomeric carbon has an H, so it was an aldehyde. Aldopentose.",
+  "om": [
+   "Correct. 5 carbons, aldehyde at the anomeric carbon.",
+   "Counted the ring O as a carbon. The ring has 4 carbons.",
+   "The anomeric carbon has an H, so it was an aldehyde.",
+   "Two errors: the anomeric carbon has an H, and there are only 5 carbons."
+  ],
+  "flip": "If the anomeric carbon carried a CH2OH and no H, it would be a ketose, and you would count that extra carbon.",
+  "fig": {
+   "src": "fig/v2/q15-3.svg",
+   "alt": "Ring structure with every carbon labelled with its hydrogens, the ring oxygen, every OH and every CH2OH. Stereochemistry not shown."
+  }
+ },
+ {
+  "id": "v2-q15-4",
+  "stem": 15,
+  "level": "hard",
+  "vi": 4,
+  "vn": 5,
+  "week": 3,
+  "lo": "W3: classify monosaccharides",
+  "topic": "Ring sugars: aldose or ketose, how many carbons",
+  "q": "Sugar R is shown below in its ringed form. How would it be classified in its linear form?",
+  "o": [
+   "Aldopentose",
+   "Aldohexose",
+   "Ketopentose",
+   "Ketohexose"
+  ],
+  "a": 2,
+  "why": "The ring holds four carbons and the ring O. Only one CH2OH sits outside, on the anomeric carbon, which has no H, so it was a ketone carbon. The CH2 on the other side of the ring O is a ring carbon, not a CH2OH. 4 + 1 = 5 carbons. Ketopentose.",
+  "om": [
+   "The anomeric carbon has no H, so it was a ketone.",
+   "Two errors: no H on the anomeric carbon, and only 5 carbons.",
+   "Correct. 5 carbons, ketone at the anomeric carbon.",
+   "Assumed a fructose-like ring always means 6 carbons. Only one carbon sits outside this ring."
+  ],
+  "flip": "If there had been a second CH2OH outside the ring, it would have been a ketohexose like fructose.",
+  "fig": {
+   "src": "fig/v2/q15-4.svg",
+   "alt": "Ring structure with every carbon labelled with its hydrogens, the ring oxygen, every OH and every CH2OH. Stereochemistry not shown."
+  }
+ },
+ {
+  "id": "v2-q15-5",
+  "stem": 15,
+  "level": "hard",
+  "vi": 5,
+  "vn": 5,
+  "week": 3,
+  "lo": "W3: classify monosaccharides",
+  "topic": "Ring sugars: aldose or ketose, how many carbons",
+  "q": "Tuftsose, a sugar made by a deep-sea bacterium, is shown below in its ringed form. How would it be classified in its linear form?",
+  "o": [
+   "Aldopentose",
+   "Aldohexose",
+   "Ketopentose",
+   "Ketohexose"
+  ],
+  "a": 1,
+  "why": "The ring is five-membered, but that does not make it a pentose. Count every carbon: four in the ring plus a two-carbon side chain (a CH with an OH, then a CH2OH) outside = 6. The anomeric carbon has an H, so it was an aldehyde. Aldohexose.",
+  "om": [
+   "Ring-size trap: a five-membered ring is not five carbons. Count the side chain.",
+   "Correct. 6 carbons, aldehyde at the anomeric carbon.",
+   "Two errors: the anomeric carbon has an H, and the side chain adds two carbons.",
+   "The anomeric carbon has an H, so it was an aldehyde."
+  ],
+  "flip": "If the side chain had been a single CH2OH, it would have been an aldopentose like ribose.",
+  "fig": {
+   "src": "fig/v2/q15-5.svg",
+   "alt": "Ring structure with every carbon labelled with its hydrogens, the ring oxygen, every OH and every CH2OH. Stereochemistry not shown."
+  }
+ },
+ {
+  "id": "v2-q22-1",
+  "stem": 22,
+  "level": "hard",
+  "vi": 1,
+  "vn": 3,
+  "week": 4,
+  "lo": "W4: how enzymes speed reactions",
+  "topic": "Transition-state analogs",
+  "q": "Enzymes speed up reactions by binding and stabilizing the transition state. Researchers design a stable molecule that has the same shape and charge distribution as the transition state of the reaction catalyzed by enzyme E, but it cannot be converted to product. What effect would this molecule most likely have when added to enzyme E and its substrate?",
+  "o": [
+   "It binds the active site weakly, because the active site is shaped to fit the substrate",
+   "It binds the active site more tightly than the substrate does and acts as a competitive inhibitor, slowing the reaction",
+   "It speeds up the reaction by giving the enzyme a ready-made transition state",
+   "It makes ΔG of the reaction less negative, so less product forms at equilibrium",
+   "It binds a separate allosteric site and activates the enzyme"
+  ],
+  "a": 1,
+  "why": "The active site binds the transition state more tightly than the substrate; that tight binding is what stabilizes it and lowers the activation energy. A stable look-alike gets that tight binding but cannot react, so it sits in the active site and blocks substrate: a strong competitive inhibitor. ΔG is unchanged.",
+  "om": [
+   "The active site fits the transition state best, not the substrate. That is how enzymes stabilize it.",
+   "Correct. Tight binding in the active site, competitive inhibition, lower rate.",
+   "The analog never turns into product. It occupies the active site, so less substrate is converted.",
+   "Enzymes and inhibitors change rate, never ΔG.",
+   "It mimics something that binds in the active site, so it competes there."
+  ],
+  "flip": "If the molecule had resembled the substrate instead, it would still be a competitive inhibitor, but a weaker one, because the active site binds the substrate less tightly than the transition state."
+ },
+ {
+  "id": "v2-q22-2",
+  "stem": 22,
+  "level": "hard",
+  "vi": 2,
+  "vn": 3,
+  "week": 4,
+  "lo": "W4: how enzymes speed reactions",
+  "topic": "Transition-state analogs",
+  "q": "HIV protease hydrolyzes peptide bonds in viral proteins. Enzymes speed up reactions by binding and stabilizing the transition state. A drug company designs a stable molecule that mimics the transition state of peptide bond hydrolysis by HIV protease but contains no bond the enzyme can break. What is the most likely effect on the rate at which HIV protease cuts viral proteins?",
+  "o": [
+   "The rate increases, because the enzyme no longer has to bend the substrate into the transition state",
+   "The rate increases, because stabilizing the transition state lowers the activation energy",
+   "The rate decreases, because the mimic binds the active site tightly and keeps viral proteins out",
+   "The rate is unchanged, because the mimic cannot be cut"
+  ],
+  "a": 2,
+  "why": "Peptide bond hydrolysis is exergonic but slow without a catalyst, because its activation energy is high. HIV protease speeds it up by binding the transition state tightly. A stable mimic takes that tight-binding spot and never leaves as product, so fewer active sites are free for viral proteins. The rate drops. This is the idea behind several real HIV drugs.",
+  "om": [
+   "Speeds-up trap: the mimic is never converted to product, so the enzyme gains nothing from holding it.",
+   "True for a real transition state, but this molecule is a dead end that occupies the active site.",
+   "Correct. Competitive inhibition by a transition-state mimic.",
+   "Not being cut is exactly why it stays bound and blocks the site."
+  ],
+  "flip": "If the question had asked what happens to ΔG of peptide bond hydrolysis, the answer would be no change."
+ },
+ {
+  "id": "v2-q22-3",
+  "stem": 22,
+  "level": "hard",
+  "vi": 3,
+  "vn": 3,
+  "week": 4,
+  "lo": "W4: how enzymes speed reactions",
+  "topic": "Transition-state analogs",
+  "q": "Enzymes speed up reactions by binding and stabilizing the transition state. Researchers add a stable transition-state analog to a reaction catalyzed by enzyme E, at a concentration that occupies about half of the enzyme's active sites. Which statement about the reaction is correct?",
+  "o": [
+   "ΔG of the reaction becomes less negative, so less product forms",
+   "The equilibrium shifts toward the substrate",
+   "The analog lowers the activation energy further, so the reaction speeds up",
+   "The enzyme is used up as it converts the analog to product",
+   "ΔG is unchanged; the reaction runs more slowly because fewer active sites are free to bind substrate"
+  ],
+  "a": 4,
+  "why": "Enzymes, and molecules that block them, change only how fast a reaction reaches equilibrium. They never change ΔG or where equilibrium lies. The analog blocks the active sites it occupies, so the rate drops while ΔG stays the same.",
+  "om": [
+   "Changes-ΔG trap: inhibitors change rate, not ΔG.",
+   "Equilibrium position is set by ΔG, which no inhibitor changes.",
+   "Speeds-up trap: the analog occupies active sites and cannot react.",
+   "The analog cannot react, and enzymes are not consumed.",
+   "Correct. Same ΔG, lower rate."
+  ],
+  "flip": "If the question had asked about the rate with twice as much analog, the rate would drop further; ΔG would still not change."
+ },
+ {
+  "id": "v2-q23-1",
+  "stem": 23,
+  "level": "hard",
+  "vi": 1,
+  "vn": 4,
+  "week": 4,
+  "lo": "W4: coupling unfavourable to favourable processes",
+  "topic": "Energy coupling",
+  "q": "Cells make molecule Z with the enzyme Z synthase:\nReaction 1: X + Y → Z + H2O   ΔG = +20 kJ/mol\nReaction 2: ATP + H2O → ADP + Pi   ΔG = −30 kJ/mol\nZ synthase binds X, Y and ATP together in its active site. It transfers a phosphate from ATP to X, forming X-P, and Y then displaces the phosphate to make Z. (ΔG values are for conditions in the cell.)\n\nThe cell has plenty of ATP, X and Y. Will Z accumulate?",
+  "o": [
+   "No. Reaction 1 has a positive ΔG, so it cannot happen in a cell",
+   "Yes. The enzyme lowers ΔG of reaction 1 until it is negative",
+   "Yes. The reactions are linked through the shared intermediate X-P, so the overall ΔG is +20 + (−30) = −10 kJ/mol",
+   "No. The energy from ATP hydrolysis is released as heat and cannot be used"
+  ],
+  "a": 2,
+  "why": "Coupling works when one enzyme links the two reactions through a shared intermediate (X-P). Then you add the ΔG values: +20 + (−30) = −10 kJ/mol. Negative overall, so Z is made and accumulates.",
+  "om": [
+   "Ignores coupling: an unfavourable reaction can run when it is linked to a favourable one.",
+   "Enzymes lower activation energy, never ΔG.",
+   "Correct. Linked reactions, negative sum.",
+   "That happens only when ATP is hydrolyzed separately. Here the enzyme links the two reactions."
+  ],
+  "flip": "If reaction 1 had a ΔG of +40 kJ/mol, the sum would be +10 and Z would not accumulate."
+ },
+ {
+  "id": "v2-q23-2",
+  "stem": 23,
+  "level": "hard",
+  "vi": 2,
+  "vn": 4,
+  "week": 4,
+  "lo": "W4: coupling unfavourable to favourable processes",
+  "topic": "Energy coupling",
+  "q": "Cells make molecule Z with the enzyme Z synthase:\nReaction 1: X + Y → Z + H2O   ΔG = +42 kJ/mol\nReaction 2: ATP + H2O → ADP + Pi   ΔG = −30 kJ/mol\nZ synthase binds X, Y and ATP together in its active site. It transfers a phosphate from ATP to X, forming X-P, and Y then displaces the phosphate to make Z. (ΔG values are for conditions in the cell.)\n\nThe cell has plenty of ATP, X and Y. Will Z accumulate?",
+  "o": [
+   "Yes. ATP hydrolysis is strongly exergonic, so any reaction coupled to it goes forward",
+   "No. Even coupled, the overall ΔG is +42 + (−30) = +12 kJ/mol, so the overall reaction is not spontaneous",
+   "Yes. Z synthase lowers the activation energy, so Z forms",
+   "No. Reaction 1 is endergonic, and endergonic reactions can never be coupled"
+  ],
+  "a": 1,
+  "why": "Coupling lets you add the ΔG values, but the sum still has to be negative. One ATP supplies −30 kJ/mol, and reaction 1 needs +42. The overall ΔG is +12 kJ/mol, so Z does not accumulate.",
+  "om": [
+   "One ATP supplies a fixed amount, −30 kJ/mol. It cannot drive a reaction that needs more than that.",
+   "Correct. Coupled, but the sum is still positive.",
+   "Lowering activation energy speeds up reactions that are already favourable; it cannot make an uphill reaction go.",
+   "Endergonic reactions are exactly the ones that get coupled. This one just needs more than one ATP's worth."
+  ],
+  "flip": "If the enzyme hydrolyzed two ATP per Z (−60 kJ/mol in total), the sum would be −18 kJ/mol and Z would accumulate."
+ },
+ {
+  "id": "v2-q23-3",
+  "stem": 23,
+  "level": "hard",
+  "vi": 3,
+  "vn": 4,
+  "week": 4,
+  "lo": "W4: coupling unfavourable to favourable processes",
+  "topic": "Energy coupling",
+  "q": "Cells make molecule Z with the enzyme Z synthase:\nReaction 1: X + Y → Z + H2O   ΔG = +20 kJ/mol\nReaction 2: ATP + H2O → ADP + Pi   ΔG = −30 kJ/mol\nZ synthase binds X, Y and ATP together in its active site. It transfers a phosphate from ATP to X, forming X-P, and Y then displaces the phosphate to make Z. (ΔG values are for conditions in the cell.)\n\nResearchers use a mutant Z synthase that still binds X and Y but cannot bind ATP. To supply energy, they add ATP and a different enzyme, an ATPase, that hydrolyzes ATP to ADP + Pi in the same solution. Will Z accumulate?",
+  "o": [
+   "No. ATP is hydrolyzed on its own, so its energy is released as heat, and reaction 1 alone still has ΔG = +20 kJ/mol",
+   "Yes. The two ΔG values still add to −10 kJ/mol",
+   "Yes. The ATPase lowers the activation energy of reaction 1",
+   "No. ATP hydrolysis is endergonic, so it absorbs energy"
+  ],
+  "a": 0,
+  "why": "Coupling needs a physical link: the same enzyme must use ATP's phosphate to make the intermediate X-P. Here ATP is hydrolyzed by a separate enzyme, so its free energy is released as heat. Reaction 1 still stands alone at +20 kJ/mol, so Z does not accumulate.",
+  "om": [
+   "Correct. No shared intermediate, no coupling.",
+   "Adding ΔG values only works when the reactions are linked through a shared intermediate in one active site.",
+   "The ATPase acts on ATP, not on X and Y. And lowering activation energy never changes ΔG.",
+   "Wrong sign: ATP hydrolysis is exergonic (ΔG = −30 kJ/mol)."
+  ],
+  "flip": "If the wild-type Z synthase were used, the reactions would be coupled and the overall ΔG would be −10 kJ/mol."
+ },
+ {
+  "id": "v2-q23-4",
+  "stem": 23,
+  "level": "hard",
+  "vi": 4,
+  "vn": 4,
+  "week": 4,
+  "lo": "W4: coupling unfavourable to favourable processes",
+  "topic": "Energy coupling and Le Chatelier",
+  "q": "Cells make molecule Z with the enzyme Z synthase:\nX + Y ⇌ Z   ΔG = +5 kJ/mol when X, Y and Z are all at equal concentrations\nZ synthase binds X and Y together in its active site. In the cell, a second enzyme converts Z into W as fast as Z forms, so Z stays at a very low concentration, while X and Y stay plentiful.\n\nWill Z synthase keep making Z?",
+  "o": [
+   "No. ΔG is positive, so the reaction can never run forward",
+   "Yes. Z synthase changes ΔG to a negative value",
+   "No. The reaction reaches equilibrium and stops, because Z never builds up",
+   "Yes. Removing Z as it forms pulls the reaction forward (Le Chatelier), making ΔG negative under these conditions"
+  ],
+  "a": 3,
+  "why": "ΔG depends on concentrations. The +5 kJ/mol value only applies when X, Y and Z are equal. With X and Y high and Z constantly removed, the reaction sits far from equilibrium on the reactant side, so the actual ΔG is negative and Z keeps being made (and immediately used). This is Le Chatelier: removing product shifts the equilibrium to the right.",
+  "om": [
+   "That ΔG is for equal concentrations. Keeping Z low changes it.",
+   "Enzymes never change ΔG.",
+   "Equilibrium is never reached while Z keeps being removed.",
+   "Correct. Product removal pulls the reaction forward."
+  ],
+  "flip": "If Z were not removed and built up instead, the reaction would slow and stop at equilibrium."
+ },
+ {
+  "id": "v2-q25-1",
+  "stem": 25,
+  "level": "hard",
+  "vi": 1,
+  "vn": 4,
+  "week": 4,
+  "lo": "W4: thermodynamics and spontaneity; how enzymes speed reactions",
+  "topic": "Reaction coordinate diagrams: enzyme vs coupling",
+  "q": "Each of the reaction coordinate diagrams below represents a different reaction. All four diagrams are drawn on the same free energy scale (y axis). Assume a hump (activation energy) of 20 units or less is crossed quickly without an enzyme; anything larger needs an enzyme to go at a useful rate.\n\nWhich diagram(s) represent reactions that could occur in a cell under these conditions only if an enzyme is present? (Here that means an enzyme alone is enough, and without one the reaction would not occur.)",
+  "o": [
+   "1 only",
+   "2 only",
+   "2 and 4",
+   "4 only",
+   "3 and 4"
+  ],
+  "a": 1,
+  "why": "Ask two things per diagram. Is it downhill (products below reactants, ΔG negative)? Is the hump small or big? Only diagram 2 is downhill with a big hump: spontaneous, but too slow without a catalyst. Diagram 1 is downhill with a small hump, so it goes on its own. Diagrams 3 and 4 are uphill; no enzyme alone can make an uphill reaction go.",
+  "om": [
+   "Diagram 1 has a small hump (15). It goes on its own.",
+   "Correct. Downhill with a big hump (65).",
+   "Diagram 4 is uphill. An enzyme alone cannot make it go.",
+   "Biggest-hump trap: diagram 4 is uphill, so an enzyme alone is not enough.",
+   "Uphill reactions need coupling, not just an enzyme."
+  ],
+  "flip": "If the question had said 'only if coupled to ATP hydrolysis', the answer would be 3 and 4.",
+  "fig": {
+   "src": "fig/v2/q25-1.svg",
+   "alt": "Four reaction coordinate diagrams on one free-energy axis (0 to 160). diagram 1: reactants 50, peak 65, products 20; diagram 2: reactants 55, peak 120, products 25; diagram 3: reactants 20, peak 38, products 32; diagram 4: reactants 25, peak 100, products 60"
+  }
+ },
+ {
+  "id": "v2-q25-2",
+  "stem": 25,
+  "level": "hard",
+  "vi": 2,
+  "vn": 4,
+  "week": 4,
+  "lo": "W4: thermodynamics and spontaneity; how enzymes speed reactions",
+  "topic": "Reaction coordinate diagrams: enzyme vs coupling",
+  "q": "Each of the reaction coordinate diagrams below represents a different reaction. All four diagrams are drawn on the same free energy scale (y axis). Assume a hump (activation energy) of 20 units or less is crossed quickly without an enzyme; anything larger needs an enzyme to go at a useful rate.\n\nWhich diagram(s) represent reactions that could occur in a cell under these conditions only if coupled to a strongly exergonic reaction such as ATP hydrolysis? (Here that means coupling is enough, and without coupling the reaction would not occur. In a cell the coupling is carried out by an enzyme.)",
+  "o": [
+   "3 and 4",
+   "4 only",
+   "1 only",
+   "1 and 3",
+   "2 and 4"
+  ],
+  "a": 3,
+  "why": "Coupling is needed when products sit higher than reactants (ΔG positive). Diagrams 1 and 3 are uphill. No enzyme alone can make them go; each needs to be coupled to a strongly downhill reaction. Diagrams 2 and 4 are downhill and need no coupling; diagram 4 has a big hump, so it needs an enzyme, but that is a speed problem, not a direction problem.",
+  "om": [
+   "Diagram 4 is downhill. Its big hump needs an enzyme, not coupling.",
+   "Biggest-hump trap: diagram 4 is downhill and needs only an enzyme.",
+   "Diagram 3 is uphill too (15 to 28), even though its hump is small.",
+   "Correct. Both uphill reactions.",
+   "Downhill reactions do not need coupling."
+  ],
+  "flip": "If the question had said 'only if an enzyme is present', the answer would be 4 only.",
+  "fig": {
+   "src": "fig/v2/q25-2.svg",
+   "alt": "Four reaction coordinate diagrams on one free-energy axis (0 to 160). diagram 1: reactants 30, peak 48, products 42; diagram 2: reactants 60, peak 75, products 25; diagram 3: reactants 15, peak 33, products 28; diagram 4: reactants 70, peak 130, products 35"
+  }
+ },
+ {
+  "id": "v2-q25-3",
+  "stem": 25,
+  "level": "hard",
+  "vi": 3,
+  "vn": 4,
+  "week": 4,
+  "lo": "W4: thermodynamics and spontaneity; how enzymes speed reactions",
+  "topic": "Reaction coordinate diagrams: enzyme vs coupling",
+  "q": "Each of the reaction coordinate diagrams below represents a different reaction. All four diagrams are drawn on the same free energy scale (y axis). Assume a hump (activation energy) of 20 units or less is crossed quickly without an enzyme; anything larger needs an enzyme to go at a useful rate.\n\nWhich diagram(s) represent reactions that could occur in a cell under these conditions only if coupled to a strongly exergonic reaction such as ATP hydrolysis? (Here that means coupling is enough, and without coupling the reaction would not occur. In a cell the coupling is carried out by an enzyme.)",
+  "o": [
+   "1 and 4",
+   "4 only",
+   "1 only",
+   "3 only",
+   "2 and 4"
+  ],
+  "a": 4,
+  "why": "Direction depends on the change in free energy from reactants to products, not on where the curve sits on the axis. Diagram 1 sits high but runs downhill (100 to 80). Diagram 2 sits low but runs uphill (10 to 24). Uphill means coupling is needed: diagrams 2 and 4.",
+  "om": [
+   "Absolute-height trap: diagram 1 sits high but runs downhill (100 to 80).",
+   "Diagram 2 is uphill too, even though it sits low on the axis.",
+   "Absolute-height trap: diagram 1 is the highest curve but it runs downhill.",
+   "Diagram 3 is downhill with a big hump. It needs an enzyme, not coupling.",
+   "Correct. Both uphill reactions, wherever they sit on the axis."
+  ],
+  "flip": "If the question had asked which needs only an enzyme, the answer would be diagram 3.",
+  "fig": {
+   "src": "fig/v2/q25-3.svg",
+   "alt": "Four reaction coordinate diagrams on one free-energy axis (0 to 160). diagram 1: reactants 100, peak 112, products 80; diagram 2: reactants 10, peak 28, products 24; diagram 3: reactants 70, peak 135, products 40; diagram 4: reactants 60, peak 78, products 74"
+  }
+ },
+ {
+  "id": "v2-q25-4",
+  "stem": 25,
+  "level": "hard",
+  "vi": 4,
+  "vn": 4,
+  "week": 4,
+  "lo": "W4: thermodynamics and spontaneity; how enzymes speed reactions",
+  "topic": "Reaction coordinate diagrams: enzyme vs coupling",
+  "q": "Each of the reaction coordinate diagrams below represents a different reaction. All four diagrams are drawn on the same free energy scale (y axis). Assume a hump (activation energy) of 20 units or less is crossed quickly without an enzyme; anything larger needs an enzyme to go at a useful rate.\n\nWhich diagram(s) represent reactions that could occur in a cell under these conditions only if an enzyme is present? (Here that means an enzyme alone is enough, and without one the reaction would not occur.)",
+  "o": [
+   "2 only",
+   "2 and 3",
+   "3 only",
+   "1 and 3",
+   "2 and 4"
+  ],
+  "a": 2,
+  "why": "Big humps grab the eye, but an enzyme only helps a reaction that is already downhill. Diagram 2 has the biggest hump but is uphill, so an enzyme alone can never make it go; it needs coupling. Diagram 3 is downhill with a big hump, so it needs just an enzyme. Diagram 1 is downhill with a small hump and goes on its own.",
+  "om": [
+   "Big-hump-uphill trap: diagram 2 is uphill, so an enzyme alone is not enough.",
+   "Diagram 2 is uphill. Only diagram 3 needs just an enzyme.",
+   "Correct. Downhill with a big hump.",
+   "Diagram 1 has a small hump (12). It goes on its own.",
+   "Both are uphill. They need coupling."
+  ],
+  "flip": "If diagram 2 were coupled to ATP hydrolysis, it could go, with an enzyme carrying out the coupling.",
+  "fig": {
+   "src": "fig/v2/q25-4.svg",
+   "alt": "Four reaction coordinate diagrams on one free-energy axis (0 to 160). diagram 1: reactants 40, peak 52, products 15; diagram 2: reactants 15, peak 120, products 55; diagram 3: reactants 75, peak 130, products 45; diagram 4: reactants 25, peak 42, products 38"
+  }
+ }
+]
