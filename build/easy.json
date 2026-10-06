@@ -1,0 +1,245 @@
+[
+ {
+  "id": "v2-q3-1",
+  "stem": 3,
+  "level": "easy",
+  "vi": 1,
+  "vn": 1,
+  "week": 1,
+  "lo": "W1: electronegativity, polarity, hydrophilic/hydrophobic",
+  "topic": "Water and ions",
+  "q": "When table salt dissolves, water molecules cluster around each sodium ion (Na+) with their oxygen atoms pointing toward it. Which feature of a water molecule allows it to form this attraction with ions?",
+  "o": [
+   "Water forms ionic bonds with Na+",
+   "Water carries a net negative charge",
+   "Oxygen is more electronegative than hydrogen, so water's oxygen carries a partial negative charge that is attracted to the positive ion",
+   "Water is a linear molecule, so its charges point outward",
+   "Water's hydrogen atoms carry partial negative charges"
+  ],
+  "a": 2,
+  "why": "Water is polar: oxygen pulls the shared electrons toward itself, so the O end is partly negative and the H ends are partly positive. The partly negative oxygen is attracted to Na+ (and the partly positive hydrogens to Cl-). Water is bent and has no net charge.",
+  "om": [
+   "Trap: water has no full charge, so it cannot form an ionic bond. This is an attraction between a partial charge and an ion.",
+   "Net-charge trap: water is neutral overall. The charges are partial and uneven.",
+   "Correct. Polarity from electronegativity.",
+   "Water is bent, not linear. A linear molecule with this bond pattern would cancel its polarity.",
+   "Backwards: the hydrogens are partly positive."
+  ]
+ },
+ {
+  "id": "v2-q4-1",
+  "stem": 4,
+  "level": "easy",
+  "vi": 1,
+  "vn": 1,
+  "week": 1,
+  "lo": "W1: covalent vs ionic vs hydrogen bonds vs London dispersion forces",
+  "topic": "Boiling point and dispersion forces",
+  "q": "Hydrocarbons X, Y and Z (drawn below) all have the formula C5H12 and are nonpolar. Their boiling points fall from X (36 °C) to Y (28 °C) to Z (10 °C). Which best explains this trend?",
+  "o": [
+   "The more branched molecules form fewer hydrogen bonds with each other",
+   "Boiling breaks C-H bonds, and branching weakens them",
+   "The straighter the molecule, the more surface it shares with its neighbours, so more London dispersion forces must be overcome to boil it",
+   "The more branched molecules are lighter",
+   "The more branched molecules are more polar"
+  ],
+  "a": 2,
+  "why": "All three are nonpolar, so the only attractions between molecules are London dispersion forces. A straight chain lies alongside its neighbours over a long surface; a compact, branched molecule touches less. Less contact, weaker dispersion forces, lower boiling point.",
+  "om": [
+   "Hydrocarbons have no O-H or N-H, so they form no hydrogen bonds at all.",
+   "Boiling separates molecules from each other. It breaks no covalent bonds.",
+   "Correct. Shape changes surface contact, which changes dispersion forces.",
+   "Same formula, same mass.",
+   "C-H bonds are nonpolar; branching does not make the molecule polar."
+  ],
+  "fig": {
+   "src": "fig/v2/q4-1.svg",
+   "alt": "Three skeletal structures, all C5H12: X is a straight five-carbon chain; Y has one branch; Z is a central carbon with four methyl groups."
+  }
+ },
+ {
+  "id": "v2-q5-1",
+  "stem": 5,
+  "level": "easy",
+  "vi": 1,
+  "vn": 2,
+  "week": 2,
+  "lo": "W2: condensation vs hydrolysis; four macromolecules",
+  "topic": "Digestion: hydrolysis and water",
+  "q": "A student writes: \"When we digest proteins, the peptide bonds are broken by hydrolysis, which is why digestion uses up water.\" Which is the best evaluation of this statement?",
+  "o": [
+   "Correct in every part",
+   "Incorrect: peptide bonds are broken by condensation, which releases water",
+   "Incorrect: amino acids in proteins are joined by glycosidic linkages",
+   "Incorrect: hydrolysis releases water, so digestion produces water"
+  ],
+  "a": 0,
+  "why": "Proteins are amino acids joined by peptide bonds. Digestion splits them by hydrolysis, which adds a water molecule across each bond, so water is used up. Condensation is the reverse: it builds the bond and releases water.",
+  "om": [
+   "Correct. Every slot is right.",
+   "Swapped the reactions: condensation builds polymers and releases water.",
+   "Glycosidic linkages join sugars, not amino acids.",
+   "Hydrolysis consumes water; condensation releases it."
+  ]
+ },
+ {
+  "id": "v2-q5-2",
+  "stem": 5,
+  "level": "easy",
+  "vi": 2,
+  "vn": 2,
+  "week": 2,
+  "lo": "W2: condensation vs hydrolysis; four macromolecules",
+  "topic": "Digestion: hydrolysis and water",
+  "q": "A student writes: \"When we digest starch, the glycosidic linkages are broken by condensation, which is why digestion uses up water.\" Which is the best evaluation of this statement?",
+  "o": [
+   "Correct in every part",
+   "One error: the linkages are broken by hydrolysis, not condensation; the rest is correct",
+   "One error: starch is held together by peptide bonds, not glycosidic linkages",
+   "One error: digestion releases water rather than using it up"
+  ],
+  "a": 1,
+  "why": "Starch is glucose joined by glycosidic linkages, and digestion does use up water. The wrong slot is the reaction: breaking a bond while adding water is hydrolysis. Condensation is the building reaction, and it releases water.",
+  "om": [
+   "The reaction slot is wrong: condensation builds bonds.",
+   "Correct. Only the reaction name is wrong.",
+   "Starch is a polysaccharide; its linkages are glycosidic.",
+   "Digestion by hydrolysis consumes water, so this slot was right."
+  ]
+ },
+ {
+  "id": "v2-q13-1",
+  "stem": 13,
+  "level": "easy",
+  "vi": 1,
+  "vn": 1,
+  "week": 2,
+  "lo": "W2: nucleotides and nucleic acids; DNA vs RNA",
+  "topic": "Reading base composition",
+  "q": "Researchers isolate the genomes of three newly discovered viruses and measure their base composition (%) to determine what kind of nucleic acid each genome is. The data are in the table below.\n\nWhich conclusion is best supported by these data?",
+  "o": [
+   "Virus 1 is double-stranded DNA, virus 2 is double-stranded RNA, and virus 3 is single-stranded DNA",
+   "Virus 2 must be single-stranded, because RNA is always single-stranded",
+   "Virus 3 has more genes than virus 1, because it has more C",
+   "Virus 1 is single-stranded, because its A does not equal its G",
+   "Virus 2 is DNA, because its A equals its U"
+  ],
+  "a": 0,
+  "why": "T means DNA, U means RNA. In a double strand every base has a partner, so A = T (or A = U) and G = C. Virus 1: DNA, A = T and G = C, double-stranded. Virus 2: RNA, A = U and G = C, double-stranded RNA. Virus 3: DNA, but A does not equal T, so single-stranded.",
+  "om": [
+   "Correct. Use T or U for DNA or RNA, then A = T (or U) and G = C for double strands.",
+   "RNA can be double-stranded; A = U and G = C point to dsRNA here.",
+   "Over-claim: base percentages say nothing about how many genes a genome has.",
+   "The pairing rule is A = T and G = C, not A = G.",
+   "DNA has T, not U. A virus with U is RNA."
+  ],
+  "fig": {
+   "src": "fig/v2/q13-1.svg",
+   "alt": "Table of base composition (%): virus 1 A 20, T 20, G 30, C 30, U 0; virus 2 A 25, T 0, G 25, C 25, U 25; virus 3 A 30, T 15, G 22, C 33, U 0."
+  }
+ },
+ {
+  "id": "v2-q16-1",
+  "stem": 16,
+  "level": "easy",
+  "vi": 1,
+  "vn": 1,
+  "week": 3,
+  "lo": "W3: carbohydrate functions",
+  "topic": "Carbohydrate functions",
+  "q": "Which of the following is NOT a function of carbohydrates?",
+  "o": [
+   "Storing glucose in liver and muscle cells as glycogen",
+   "Forming part of the A and B blood-type markers on red blood cells",
+   "Catalyzing chemical reactions as enzymes",
+   "Providing structural support in plant cell walls as cellulose"
+  ],
+  "a": 2,
+  "why": "Carbohydrates store energy (glycogen in animals, starch in plants), build structures (cellulose) and mark cell surfaces (the sugars of the A and B blood types). Catalysis is a job for proteins (enzymes).",
+  "om": [
+   "Decoy: this one is true. Animals store glycogen in liver and muscle; plants store starch.",
+   "True: A and B blood types are sugars on the cell surface.",
+   "Correct (NOT a function). Enzymes are proteins.",
+   "True: cellulose is a structural polysaccharide."
+  ]
+ },
+ {
+  "id": "v2-q17-1",
+  "stem": 17,
+  "level": "easy",
+  "vi": 1,
+  "vn": 1,
+  "week": 3,
+  "lo": "W3: predict whether and how a substance crosses a membrane",
+  "topic": "Crossing the membrane",
+  "q": "A steroid hormone normally crosses the plasma membrane on its own and binds a receptor inside target cells. Chemists attach a charged phosphate group to the hormone, hoping to make it dissolve better in blood. What effect would this change most likely have?",
+  "o": [
+   "It crosses the membrane faster, because it is more soluble",
+   "No change: steroids cross membranes whatever groups are attached",
+   "It dissolves better in blood but can no longer cross the membrane on its own, so it cannot reach its receptor and loses its effect",
+   "It binds its receptor more tightly, because charged groups attract"
+  ],
+  "a": 2,
+  "why": "A steroid crosses the membrane because it is nonpolar and can dissolve through the hydrophobic interior of the bilayer. A charged group makes it more water-soluble but blocks it from passing through that hydrophobic core, so it cannot reach a receptor inside the cell.",
+  "om": [
+   "Soluble in water is the opposite of what crosses the bilayer's hydrophobic core.",
+   "A charge changes everything: charged molecules cannot cross the bilayer unaided.",
+   "Correct. Better in blood, stuck outside the cell.",
+   "It never reaches the receptor, which is inside the cell."
+  ]
+ },
+ {
+  "id": "v2-q18-1",
+  "stem": 18,
+  "level": "easy",
+  "vi": 1,
+  "vn": 1,
+  "week": 3,
+  "lo": "W3: predict whether and how a substance crosses a membrane",
+  "topic": "Osmosis",
+  "q": "In winter, salt spread on roads washes into the soil beside the road. Plants growing along the road wilt, even though the soil is wet. Which is the best explanation?",
+  "o": [
+   "The soil water is hypertonic to the root cells, so water leaves the cells by osmosis",
+   "Salt diffuses into the root cells and makes them burst",
+   "The soil water is hypotonic to the root cells, so water rushes in and the cells burst",
+   "The salt blocks water from moving in either direction across the membrane",
+   "Salt pulls water out of the cells by forming ionic bonds with it"
+  ],
+  "a": 0,
+  "why": "Salty soil water has more dissolved solute than the fluid inside the root cells: it is hypertonic. Water moves by osmosis toward the higher solute concentration, so it leaves the cells, they lose pressure, and the plant wilts despite wet soil.",
+  "om": [
+   "Correct. Hypertonic outside, water moves out.",
+   "Ions do not cross the membrane freely, and wilting means cells lost water, not burst.",
+   "Backwards: salty water is hypertonic, not hypotonic.",
+   "Water still moves; it moves out.",
+   "Water and ions attract, but they do not form ionic bonds; osmosis explains the water movement."
+  ]
+ },
+ {
+  "id": "v2-q20-1",
+  "stem": 20,
+  "level": "easy",
+  "vi": 1,
+  "vn": 1,
+  "week": 4,
+  "lo": "W4: thermodynamics and spontaneity",
+  "topic": "Entropy",
+  "q": "Which of the following processes DECREASES the entropy of the system?",
+  "o": [
+   "ATP + H2O → ADP + Pi",
+   "Sugar dissolving in water",
+   "A cell pumping H+ ions across a membrane to build a concentration gradient",
+   "Starch being hydrolyzed into glucose",
+   "A protein folding in water, counting the protein and the surrounding water together as the system"
+  ],
+  "a": 2,
+  "why": "Building a gradient packs ions on one side: more order, lower entropy (course fact). The others spread things out: one molecule becomes several, a solid disperses, a polymer breaks into monomers. Folding orders the chain but frees much more water, so with water counted, entropy rises.",
+  "om": [
+   "One molecule becomes two (plus water used): entropy increases.",
+   "Dissolving spreads molecules out: entropy increases.",
+   "Correct. A gradient is order.",
+   "One polymer becomes many monomers: entropy increases.",
+   "Folding nuance: the chain gets more ordered, but the freed water gains more, so overall entropy increases."
+  ]
+ }
+]

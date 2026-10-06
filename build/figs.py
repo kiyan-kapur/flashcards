@@ -94,7 +94,8 @@ def amino_panel(name, letters):
         assert CalcMolFormula(m) == AA_FORMULA[L], (L, CalcMolFormula(m))
         rdDepictor.Compute2DCoords(m)
         mols.append(m); legends.append(AA_NAME[L])
-    d = rdMolDraw2D.MolDraw2DSVG(280 * len(mols), 260, 280, 260)
+    per = min(len(mols), 4)
+    d = rdMolDraw2D.MolDraw2DSVG(280 * per, 260 * math.ceil(len(mols) / per), 280, 260)
     o = d.drawOptions(); o.clearBackground = True; o.bondLineWidth = 2; o.legendFontSize = 20; o.minFontSize = 15
     d.DrawMolecules(mols, legends=legends)
     d.FinishDrawing()
@@ -229,8 +230,10 @@ def table(name, head, rows, note=""):
         if ri == 0:
             s.append(f'<rect x="10" y="{y}" width="{W-20}" height="{rh}" fill="#e9eef0"/>')
         for i, c in enumerate(r):
-            s.append(f'<text x="{x+12}" y="{y+26}" font-size="17" font-weight="{"bold" if ri == 0 else "normal"}" fill="#111" '
-                     f'font-family="{"Courier New, monospace" if "5\'" in str(c) else "Helvetica, Arial, sans-serif"}">{str(c).replace("&", "&amp;")}</text>')
+            fam = "Courier New, monospace" if "5'" in str(c) else "Helvetica, Arial, sans-serif"
+            wt = "bold" if ri == 0 else "normal"
+            txt = str(c).replace("&", "&amp;")
+            s.append(f'<text x="{x+12}" y="{y+26}" font-size="17" font-weight="{wt}" fill="#111" font-family="{fam}">{txt}</text>')
             x += cw[i]
         s.append(f'<line x1="10" x2="{W-10}" y1="{y+rh}" y2="{y+rh}" stroke="#c5cfd3"/>')
         y += rh

@@ -1,0 +1,599 @@
+[
+ {
+  "id": "v2-q1-1",
+  "stem": 1,
+  "level": "medium",
+  "vi": 1,
+  "vn": 2,
+  "week": 1,
+  "lo": "W1: two definitions of life and judging an entity by each",
+  "topic": "Definitions of life",
+  "q": "The textbook defines life by five characteristics: made of cells, reproduces, carries out metabolism, stores genetic information, and is a product of evolution. NASA's 1994 definition: life is a self-sustaining chemical system capable of Darwinian evolution.\n\nA virus is a protein coat around a genome of DNA or RNA. It has no cell membrane and no ribosomes, and it carries out no chemical reactions until it enters a host cell, which then copies it. Which is the best evaluation of the virus by the textbook definition?",
+  "o": [
+   "Alive: it reproduces and its genome evolves, which covers the five characteristics",
+   "Not alive: it is not made of cells and carries out no metabolism of its own",
+   "Not alive: it stores no genetic information",
+   "Alive: it is made of more than one cell"
+  ],
+  "a": 1,
+  "why": "The textbook needs all five characteristics. A virus has genetic information and its lineage evolves, but it is not made of a cell and runs no metabolism of its own, so it fails the textbook definition. Whether a virus meets NASA's definition is debated, which is why this card asks about the textbook definition only.",
+  "om": [
+   "Two of five is not enough. It still fails 'made of cells' and 'metabolism'.",
+   "Correct. Not cellular and no metabolism of its own.",
+   "Wrong reason: a virus does store genetic information, in DNA or RNA.",
+   "Course trap: 'made of more than one cell' is not one of the five characteristics, and a virus is not made of cells anyway."
+  ]
+ },
+ {
+  "id": "v2-q1-2",
+  "stem": 1,
+  "level": "medium",
+  "vi": 2,
+  "vn": 2,
+  "week": 1,
+  "lo": "W1: two definitions of life and judging an entity by each",
+  "topic": "Definitions of life",
+  "q": "The textbook defines life by five characteristics: made of cells, reproduces, carries out metabolism, stores genetic information, and is a product of evolution. NASA's 1994 definition: life is a self-sustaining chemical system capable of Darwinian evolution.\n\nA forest fire grows by taking in fuel and oxygen, releases energy as heat and light, and spreads by starting new fires nearby. Which is the best evaluation?",
+  "o": [
+   "Alive by both definitions: it takes in materials, releases energy and makes copies of itself",
+   "Alive by the NASA 1994 definition only: it is a self-sustaining chemical system",
+   "Alive by the textbook definition only: it has metabolism and reproduces",
+   "Alive by neither definition: it is not made of cells, stores no genetic information, and cannot undergo Darwinian evolution"
+  ],
+  "a": 3,
+  "why": "Fire looks like metabolism and reproduction, but it has no cells and no genetic information, so it fails the textbook definition. It also cannot evolve by natural selection: a new fire inherits nothing from the old one, so there are no heritable variations to select. That fails NASA's definition too. The course ruling: a burning fire is alive by neither.",
+  "om": [
+   "Surface resemblance: burning fuel is not cellular metabolism, and spreading is not reproduction with inheritance.",
+   "Self-sustaining is not enough. NASA also needs Darwinian evolution, which needs heritable variation, and fire has none.",
+   "The textbook also needs cells and genetic information. Fire has neither.",
+   "Correct. Course ruling: fire is alive by neither definition."
+  ]
+ },
+ {
+  "id": "v2-q2-1",
+  "stem": 2,
+  "level": "medium",
+  "vi": 1,
+  "vn": 2,
+  "week": 1,
+  "lo": "W1: Lewis, bond-line and molecular formulas",
+  "topic": "Valence and molecular formulas",
+  "q": "Silicon has 4 valence electrons, the same number as carbon. What is the most likely molecular formula of a stable molecule made only of silicon and hydrogen, with one silicon atom?",
+  "o": [
+   "SiH2",
+   "SiH3",
+   "SiH4",
+   "SiH8"
+  ],
+  "a": 2,
+  "why": "Same valence electrons means the same bonding pattern. Carbon makes four bonds (CH4), so silicon also needs four more electrons to fill its octet and makes four single bonds to hydrogen: SiH4.",
+  "om": [
+   "Treated silicon like oxygen, which makes two bonds.",
+   "Treated silicon like nitrogen, which makes three bonds.",
+   "Correct. Four valence electrons, four bonds, like CH4.",
+   "Confused the octet (8 electrons) with the number of bonds. Each bond shares one of silicon's electrons."
+  ]
+ },
+ {
+  "id": "v2-q2-2",
+  "stem": 2,
+  "level": "medium",
+  "vi": 2,
+  "vn": 2,
+  "week": 1,
+  "lo": "W1: Lewis, bond-line and molecular formulas",
+  "topic": "Valence and molecular formulas",
+  "q": "Sulfur has 6 valence electrons, the same number as oxygen. What is the most likely molecular formula of a stable molecule made only of sulfur and hydrogen, with one sulfur atom?",
+  "o": [
+   "H2S",
+   "SH4",
+   "SH6",
+   "SH"
+  ],
+  "a": 0,
+  "why": "Sulfur behaves like oxygen. With 6 valence electrons it needs 2 more to fill its octet, so it forms 2 bonds and keeps two lone pairs, just as oxygen does in H2O. The answer is H2S. The number of bonds is the valence number (2), not the number of valence electrons (6).",
+  "om": [
+   "Correct. Like H2O: two bonds, two lone pairs.",
+   "Four bonds is carbon's pattern, not oxygen's.",
+   "Six-bond trap: 6 valence electrons does not mean 6 bonds. Sulfur needs only 2 more electrons.",
+   "One bond would leave sulfur one electron short of an octet."
+  ]
+ },
+ {
+  "id": "v2-q6-1",
+  "stem": 6,
+  "level": "medium",
+  "vi": 1,
+  "vn": 2,
+  "week": 2,
+  "lo": "W2: chemical interactions shape proteins; four levels of structure and what stabilises each",
+  "topic": "Quaternary vs tertiary structure",
+  "q": "Enzyme D, from a gut bacterium, is a homodimer. Each subunit is a single polypeptide chain of 310 amino acids. Where the two subunits contact each other, the R group of lysine 88 on one subunit forms an ionic bond with the R group of aspartate 142 on the other subunit. Each subunit's fold is held by a hydrophobic core and hydrogen bonds. A mutant form of the enzyme has alanine instead of lysine at position 88. The mutant subunits fold normally but fail to form dimers, and the enzyme is inactive. The structures of the named amino acids are shown below.\n\nWhich statement best explains why the mutant subunits fold normally but fail to form dimers?",
+  "o": [
+   "The substitution disrupts the alpha helix that contains residue 88, which unfolds the subunit",
+   "Alanine forms a disulfide bond with aspartate 142 instead of an ionic bond",
+   "Alanine's R group is a nonpolar methyl group, so position 88 can no longer form the ionic bond with aspartate 142 that holds the subunits together; the fold of each subunit does not depend on residue 88",
+   "The substitution breaks a peptide bond in the backbone, so the subunit is shorter",
+   "Alanine's R group is too large to fit at the interface"
+  ],
+  "a": 2,
+  "why": "The stem tells you the fold is fine, so tertiary structure is intact. Residue 88's only job is the ionic bond across the interface, which is quaternary structure. Alanine's R group is an uncharged methyl, so that ionic bond is gone and the subunits do not stick.",
+  "om": [
+   "Trap: secondary structure is held by backbone hydrogen bonds, not R groups, and the stem says the subunit folds normally.",
+   "Disulfide bonds form only between two cysteine R groups (S-S).",
+   "Correct. Interface bond lost, fold untouched.",
+   "A substitution swaps one amino acid for another; the backbone and chain length are unchanged.",
+   "Alanine's R group is smaller than lysine's, not larger."
+  ],
+  "fig": {
+   "src": "fig/v2/q6-1.svg",
+   "alt": "Skeletal structures, neutral form, alphabetical: alanine, aspartate, lysine."
+  }
+ },
+ {
+  "id": "v2-q6-2",
+  "stem": 6,
+  "level": "medium",
+  "vi": 2,
+  "vn": 2,
+  "week": 2,
+  "lo": "W2: chemical interactions shape proteins; four levels of structure and what stabilises each",
+  "topic": "Quaternary vs tertiary structure",
+  "q": "Enzyme D, from a gut bacterium, is a homodimer. Each subunit is a single polypeptide chain of 310 amino acids. Where the two subunits contact each other, the R group of cysteine 88 on one subunit forms a disulfide bond with the R group of cysteine 142 on the other subunit. Each subunit's fold is held by a hydrophobic core and hydrogen bonds. A mutant form of the enzyme has serine instead of cysteine at position 88. The mutant subunits fold normally but fail to form dimers, and the enzyme is inactive. The structures of the named amino acids are shown below.\n\nWhich statement best explains why the mutant subunits fold normally but fail to form dimers?",
+  "o": [
+   "Changing any amino acid changes every level of structure, so the mutant subunit must be misfolded",
+   "The substitution disrupts the alpha helix that contains residue 88, which unfolds the subunit",
+   "Serine's R group is nonpolar, so it buries itself in the hydrophobic core",
+   "Serine's R group ends in -OH instead of -SH, so it cannot form the covalent disulfide bond with cysteine 142 that links the subunits; residue 88 is at the interface, not in the core"
+  ],
+  "a": 3,
+  "why": "Disulfide bonds form only between two -SH groups. Serine is cysteine with O in place of S, so the S-S link across the interface is lost. The stem says the subunit still folds, so residue 88 matters only for quaternary structure.",
+  "om": [
+   "Contradicts the stem, which says the mutant folds normally.",
+   "Trap: secondary structure is backbone hydrogen bonds, and the fold is intact.",
+   "Serine's -OH makes it polar, not nonpolar.",
+   "Correct. No -SH, no disulfide, no dimer."
+  ],
+  "fig": {
+   "src": "fig/v2/q6-2.svg",
+   "alt": "Skeletal structures, neutral form, alphabetical: cysteine (side chain CH2-SH) and serine (side chain CH2-OH)."
+  }
+ },
+ {
+  "id": "v2-q7-1",
+  "stem": 7,
+  "level": "medium",
+  "vi": 1,
+  "vn": 3,
+  "week": 2,
+  "lo": "W2: chemical interactions shape proteins",
+  "topic": "Which substitution keeps the interface",
+  "q": "Enzyme D, from a gut bacterium, is a homodimer. Each subunit is a single polypeptide chain of 310 amino acids. Where the two subunits contact each other, the R group of lysine 88 on one subunit forms an ionic bond with the R group of aspartate 142 on the other subunit. Each subunit's fold is held by a hydrophobic core and hydrogen bonds. A mutant at position 88 fails to form dimers. Which substitution at position 88 would be least likely to prevent dimer formation? Every amino acid named here is drawn below, alphabetically.",
+  "o": [
+   "Alanine",
+   "Arginine",
+   "Aspartate",
+   "Leucine",
+   "Serine"
+  ],
+  "a": 1,
+  "why": "Aspartate 142 is negative, so position 88 needs a positive R group to keep the ionic bond. Arginine's R group ends in a nitrogen-rich group that is positive at pH 7.4, just like lysine's amine.",
+  "om": [
+   "Nonpolar methyl: no charge, no ionic bond.",
+   "Correct. Positive R group, so the ionic bond with aspartate survives.",
+   "Negative next to negative: it would repel aspartate 142.",
+   "Nonpolar: no charge to pair with aspartate.",
+   "Polar but uncharged. An -OH cannot replace a full ionic bond."
+  ],
+  "fig": {
+   "src": "fig/v2/q7-1.svg",
+   "alt": "Skeletal structures, neutral form, alphabetical, names only: alanine, arginine, aspartate, leucine, lysine, serine."
+  }
+ },
+ {
+  "id": "v2-q7-2",
+  "stem": 7,
+  "level": "medium",
+  "vi": 2,
+  "vn": 3,
+  "week": 2,
+  "lo": "W2: chemical interactions shape proteins",
+  "topic": "Which substitution keeps the interface",
+  "q": "Enzyme D, from a gut bacterium, is a homodimer. Each subunit is a single polypeptide chain of 310 amino acids. Where the two subunits contact each other, the R group of aspartate 88 on one subunit forms an ionic bond with the R group of lysine 142 on the other subunit. Each subunit's fold is held by a hydrophobic core and hydrogen bonds. A mutant at position 88 fails to form dimers. Which substitution at position 88 would be least likely to prevent dimer formation? Every amino acid named here is drawn below, alphabetically.",
+  "o": [
+   "Asparagine",
+   "Glutamate",
+   "Glycine",
+   "Lysine",
+   "Threonine"
+  ],
+  "a": 1,
+  "why": "Lysine 142 is positive, so position 88 needs a negative R group. Glutamate has a carboxyl on its R group, like aspartate, and is negative at pH 7.4.",
+  "om": [
+   "Look-alike trap: asparagine ends in an amide, which is uncharged. It looks like aspartate but carries no negative charge.",
+   "Correct. Carboxyl R group, negative, pairs with lysine.",
+   "Glycine's R group is just H: no charge.",
+   "Positive next to positive: it would repel lysine 142.",
+   "Polar but uncharged. An -OH cannot replace a full ionic bond."
+  ],
+  "fig": {
+   "src": "fig/v2/q7-2.svg",
+   "alt": "Skeletal structures, neutral form, alphabetical, names only: asparagine, aspartate, glutamate, glycine, lysine, threonine."
+  }
+ },
+ {
+  "id": "v2-q7-3",
+  "stem": 7,
+  "level": "medium",
+  "vi": 3,
+  "vn": 3,
+  "week": 2,
+  "lo": "W2: chemical interactions shape proteins",
+  "topic": "Which substitution keeps the interface",
+  "q": "Enzyme D, from a gut bacterium, is a homodimer. Each subunit is a single polypeptide chain of 310 amino acids. Where the two subunits contact each other, the R group of serine 88 on one subunit forms a hydrogen bond with the R group of glutamine 142 on the other subunit. Each subunit's fold is held by a hydrophobic core and hydrogen bonds. A mutant at position 88 fails to form dimers. Which substitution at position 88 would be least likely to prevent dimer formation? Every amino acid named here is drawn below, alphabetically.",
+  "o": [
+   "Alanine",
+   "Cysteine",
+   "Leucine",
+   "Phenylalanine",
+   "Threonine"
+  ],
+  "a": 4,
+  "why": "Serine's -OH hydrogen bonds with glutamine's amide. Threonine also has an -OH on a small R group, so it can make the same hydrogen bond.",
+  "om": [
+   "Nonpolar methyl: no hydrogen bond.",
+   "Course ruling: S-H is treated as nonpolar (electronegativity difference 0.38), so cysteine's -SH does not hydrogen bond here.",
+   "Nonpolar: no hydrogen bond.",
+   "Nonpolar ring: no hydrogen bond, and much bulkier than serine.",
+   "Correct. Another small R group with an -OH."
+  ],
+  "fig": {
+   "src": "fig/v2/q7-3.svg",
+   "alt": "Skeletal structures, neutral form, alphabetical, names only: alanine, cysteine, glutamine, leucine, phenylalanine, serine, threonine."
+  }
+ },
+ {
+  "id": "v2-q9-1",
+  "stem": 9,
+  "level": "medium",
+  "vi": 1,
+  "vn": 3,
+  "week": 2,
+  "lo": "W2: functional groups",
+  "topic": "Net charge from functional groups",
+  "q": "The structure of Molecule Q is shown below. What is the most likely net charge of Molecule Q at physiological pH (7.4)?",
+  "o": [
+   "−2",
+   "−1",
+   "0",
+   "+1",
+   "+2"
+  ],
+  "a": 1,
+  "why": "Count only groups that ionize. The amine is basic: +1. Two carboxyl groups are acidic: −1 each. Net: +1 − 1 − 1 = −1.",
+  "om": [
+   "Counted a third negative group. There are only two carboxyls.",
+   "Correct. One amine (+1), two carboxyls (−2).",
+   "Counted only the backbone amine and carboxyl and missed the carboxyl on the side chain.",
+   "Swapped the signs: carboxyls are acidic and lose H+, so they are negative.",
+   "Treated the carboxyls as basic."
+  ],
+  "fig": {
+   "src": "fig/v2/q9-1.svg",
+   "alt": "Skeletal structure, neutral form, no charges drawn: an amino acid whose side chain is CH2-CH2-COOH."
+  }
+ },
+ {
+  "id": "v2-q9-2",
+  "stem": 9,
+  "level": "medium",
+  "vi": 2,
+  "vn": 3,
+  "week": 2,
+  "lo": "W2: functional groups",
+  "topic": "Net charge from functional groups",
+  "q": "The structure of Molecule Q is shown below. What is the most likely net charge of Molecule Q at physiological pH (7.4)?",
+  "o": [
+   "−2",
+   "−1",
+   "0",
+   "+1",
+   "+2"
+  ],
+  "a": 3,
+  "why": "In a peptide, count the free amino end (+1), the free carboxyl end (−1) and any charged R groups. One R group ends in an amine (+1). The other ends in an amide, which is uncharged, and the peptide bond is an amide too, also uncharged. Net: +1 + 1 − 1 = +1.",
+  "om": [
+   "Too negative: counted amides as acidic.",
+   "Missed the amine at the end of the side chain.",
+   "Counted only the two ends and missed the charged side chain.",
+   "Correct. Two amines (+2), one carboxyl (−1); amides are 0.",
+   "Amide trap: counted an amide as basic. Amides are uncharged polar."
+  ],
+  "fig": {
+   "src": "fig/v2/q9-2.svg",
+   "alt": "Skeletal structure, neutral form, no charges drawn: a dipeptide. One side chain ends in NH2 on a CH2 chain; the other ends in a C(=O)NH2 amide."
+  }
+ },
+ {
+  "id": "v2-q9-3",
+  "stem": 9,
+  "level": "medium",
+  "vi": 3,
+  "vn": 3,
+  "week": 2,
+  "lo": "W2: functional groups",
+  "topic": "Net charge from functional groups",
+  "q": "The structure of Molecule Q is shown below. What is the most likely net charge of Molecule Q at physiological pH (7.4)?",
+  "o": [
+   "−2",
+   "−1",
+   "0",
+   "+1",
+   "+2"
+  ],
+  "a": 0,
+  "why": "The terminal phosphate group loses two H+ at pH 7.4: −2. The thiol (-SH) and the amide are uncharged. Net: −2.",
+  "om": [
+   "Correct. Terminal phosphate −2; amide and thiol 0.",
+   "Counted the phosphate as −1. A terminal phosphate is −2.",
+   "Missed the phosphate's charge.",
+   "Amide trap: an amide is uncharged, not basic.",
+   "Treated the phosphate as basic."
+  ],
+  "fig": {
+   "src": "fig/v2/q9-3.svg",
+   "alt": "Skeletal structure, neutral form, no charges drawn: HS-CH2-CH2-NH-C(=O)-CH2-O-PO3H2."
+  }
+ },
+ {
+  "id": "v2-q14-1",
+  "stem": 14,
+  "level": "medium",
+  "vi": 1,
+  "vn": 3,
+  "week": 2,
+  "lo": "W2: nucleotides and nucleic acids",
+  "topic": "Antiparallel base pairing",
+  "q": "A researcher synthesizes four short single-stranded DNA molecules. All are written 5' to 3' in the table below.\n\nShe mixes the strands two at a time, and also tests each strand on its own (two copies of the same strand can meet). Which would form a double helix in which all 8 bases are paired?",
+  "o": [
+   "Strands 1 and 2 only",
+   "Strands 1 and 3 only",
+   "Strands 1 and 2, and strands 1 and 3",
+   "Strands 2 and 4 only",
+   "None of them"
+  ],
+  "a": 0,
+  "why": "Strands pair antiparallel: read one strand 5' to 3' and its partner 3' to 5'. Reverse strand 2 and it reads 3'-TCAGGTAC-5', which pairs base for base with strand 1 (A-T, G-C). Strand 3 is the complement of strand 1 written in the same direction, so it could only pair if the strands ran parallel, which DNA does not do.",
+  "om": [
+   "Correct. The antiparallel partner.",
+   "Parallel decoy: strand 3 matches strand 1 only if both run 5' to 3' side by side.",
+   "Strand 3 is the parallel decoy, so only 1 and 2 work.",
+   "Check every pair against the reversed partner: 2 and 4 mismatch.",
+   "Strand 2 is a perfect antiparallel partner for strand 1."
+  ],
+  "fig": {
+   "src": "fig/v2/q14-1.svg",
+   "alt": "Table of four strands, each written 5' to 3': strand 1 5'-AGTCCATG-3'; strand 2 5'-CATGGACT-3'; strand 3 5'-TCAGGTAC-3'; strand 4 5'-GGATTCAC-3'"
+  }
+ },
+ {
+  "id": "v2-q14-2",
+  "stem": 14,
+  "level": "medium",
+  "vi": 2,
+  "vn": 3,
+  "week": 2,
+  "lo": "W2: nucleotides and nucleic acids",
+  "topic": "Antiparallel base pairing",
+  "q": "A researcher synthesizes four short single-stranded DNA molecules. All are written 5' to 3' in the table below.\n\nShe mixes the strands two at a time, and also tests each strand on its own (two copies of the same strand can meet). Which would form a double helix in which all 8 bases are paired?",
+  "o": [
+   "Strand 1 on its own (two copies pair with each other)",
+   "Strands 1 and 3",
+   "Strands 2 and 4",
+   "None: a strand cannot pair with a copy of itself"
+  ],
+  "a": 0,
+  "why": "Strand 1 is a palindrome in the DNA sense: its reverse complement is itself (5'-ACGTACGT-3' read backwards and complemented gives ACGTACGT). Two copies of strand 1 therefore form a fully paired double helix. No other strand or pair matches all 8 bases.",
+  "om": [
+   "Correct. Self-complementary strand.",
+   "Reverse strand 3 and compare: several bases mismatch.",
+   "Strand 4 reversed does not complement strand 2 at every base.",
+   "A self-complementary sequence pairs with a second copy of itself."
+  ],
+  "fig": {
+   "src": "fig/v2/q14-2.svg",
+   "alt": "Table of four strands, each written 5' to 3': strand 1 5'-ACGTACGT-3'; strand 2 5'-TTGACCAG-3'; strand 3 5'-GTCAAGTC-3'; strand 4 5'-CAGGTTCA-3'"
+  }
+ },
+ {
+  "id": "v2-q14-3",
+  "stem": 14,
+  "level": "medium",
+  "vi": 3,
+  "vn": 3,
+  "week": 2,
+  "lo": "W2: nucleotides and nucleic acids",
+  "topic": "Antiparallel base pairing",
+  "q": "A researcher synthesizes four short single-stranded DNA molecules. All are written 5' to 3' in the table below.\n\nShe mixes the strands two at a time, and also tests each strand on its own (two copies of the same strand can meet). Which would form a double helix in which all 8 bases are paired?",
+  "o": [
+   "Strands 1 and 2",
+   "Strands 1 and 3",
+   "Strands 1 and 4",
+   "None of them"
+  ],
+  "a": 3,
+  "why": "Strand 2 is almost the antiparallel partner of strand 1, but one base is wrong: position 5 of strand 2 is C, where a perfect partner would have G, opposite the C in strand 1. Strand 3 only matches in the parallel direction. So no pair gets all 8 bases paired.",
+  "om": [
+   "One-mismatch trap: 7 of 8 pair, but the question asks for all 8.",
+   "Parallel decoy: strand 3 matches strand 1 only side by side in the same direction.",
+   "Strand 4 does not complement strand 1 when reversed.",
+   "Correct. Every candidate has at least one mismatch."
+  ],
+  "fig": {
+   "src": "fig/v2/q14-3.svg",
+   "alt": "Table of four strands, each written 5' to 3': strand 1 5'-AGTCCATG-3'; strand 2 5'-CATGCACT-3'; strand 3 5'-TCAGGTAC-3'; strand 4 5'-GACTTGGA-3'"
+  }
+ },
+ {
+  "id": "v2-q19-1",
+  "stem": 19,
+  "level": "medium",
+  "vi": 1,
+  "vn": 2,
+  "week": 3,
+  "lo": "W3: phospholipid structure to bilayer function",
+  "topic": "Membrane fluidity: saturation and tail length",
+  "q": "Some organisms have adaptations to keep their membranes fluid in the face of temperature changes. Like membrane permeability, membrane fluidity is influenced by noncovalent interactions between fatty acid tails. Membrane phospholipids were extracted from two fish species: one lives in Arctic water near 0 °C, the other on tropical reefs near 28 °C. The fatty acid composition is in the table below.\n\nWhich species most likely lives in the Arctic, and why?",
+  "o": [
+   "Species A, because saturated tails pack tightly and keep the membrane warm",
+   "Species B, because the kinks at double bonds in unsaturated tails stop them packing tightly, so the membrane stays fluid in the cold",
+   "Species B, because unsaturated tails form more hydrogen bonds with water",
+   "Species A, because saturated tails make the membrane more fluid"
+  ],
+  "a": 1,
+  "why": "Tail length is equal, so unsaturation decides it. Double bonds put kinks in the tails, the tails cannot pack closely, and there are fewer London dispersion interactions between them. That keeps the membrane fluid at low temperature. The Arctic fish has more unsaturated tails: species B.",
+  "om": [
+   "Membranes do not generate heat; tight packing makes a membrane stiffer in the cold.",
+   "Correct. Kinks, looser packing, fewer dispersion forces.",
+   "Fatty acid tails are nonpolar and sit inside the bilayer; they do not hydrogen bond with water.",
+   "Backwards: saturated tails pack tightly and make the membrane less fluid."
+  ],
+  "fig": {
+   "src": "fig/v2/q19-1.svg",
+   "alt": "Table: species A 70% saturated, 30% unsaturated, average tail 18 carbons; species B 35% saturated, 65% unsaturated, average tail 18 carbons."
+  }
+ },
+ {
+  "id": "v2-q19-2",
+  "stem": 19,
+  "level": "medium",
+  "vi": 2,
+  "vn": 2,
+  "week": 3,
+  "lo": "W3: phospholipid structure to bilayer function",
+  "topic": "Membrane fluidity: saturation and tail length",
+  "q": "Some organisms have adaptations to keep their membranes fluid in the face of temperature changes. Like membrane permeability, membrane fluidity is influenced by noncovalent interactions between fatty acid tails. Membrane phospholipids were extracted from two fish species: one lives in Arctic water near 0 °C, the other on tropical reefs near 28 °C. The fatty acid composition is in the table below.\n\nWhich species most likely lives in the Arctic, and why?",
+  "o": [
+   "Neither can be identified, because both have the same percentage of unsaturated tails",
+   "Species B, because longer tails have more London dispersion interactions, which keeps the membrane fluid",
+   "Species A, because shorter tails have fewer London dispersion interactions with each other, so the membrane stays fluid in the cold",
+   "Species A, because shorter tails form more hydrogen bonds"
+  ],
+  "a": 2,
+  "why": "Saturation is equal here, so tail length decides it. Shorter tails have less surface to touch neighbouring tails, so there are fewer London dispersion interactions holding them together and the membrane stays fluid when cold. Saturation and tail length are two separate levers, as with coconut oil.",
+  "om": [
+   "Course fact: saturation and tail length are two separate levers. Equal saturation leaves length to decide.",
+   "Backwards: more dispersion interactions hold tails together and make the membrane less fluid.",
+   "Correct. Short tails, fewer dispersion forces, more fluid.",
+   "Fatty acid tails are nonpolar; they do not hydrogen bond."
+  ],
+  "fig": {
+   "src": "fig/v2/q19-2.svg",
+   "alt": "Table: species A 50% saturated, 50% unsaturated, average tail 14 carbons; species B 50% saturated, 50% unsaturated, average tail 20 carbons."
+  }
+ },
+ {
+  "id": "v2-q21-1",
+  "stem": 21,
+  "level": "medium",
+  "vi": 1,
+  "vn": 2,
+  "week": 4,
+  "lo": "W4: thermodynamics and spontaneity",
+  "topic": "Thermodynamics of biological processes",
+  "q": "A newly made polypeptide folds on its own, in water, into its native shape, with its hydrophobic R groups buried in the core. Which statement best describes the thermodynamics of this process?",
+  "o": [
+   "ΔG > 0, because the folded protein is more ordered than the unfolded chain",
+   "ΔG < 0, because folding forms many new covalent bonds that release heat",
+   "ΔG < 0: the chain itself becomes more ordered, but water molecules freed from around the hydrophobic R groups gain much more entropy",
+   "ΔG = 0, because folding can be reversed",
+   "ΔG < 0, because the polypeptide chain itself gains entropy as it folds"
+  ],
+  "a": 2,
+  "why": "It happens on its own, so ΔG is negative. The chain loses entropy as it folds, but before folding, water formed ordered cages around the exposed hydrophobic R groups. Burying those groups frees the water, and that entropy gain is larger. The interactions in the fold are noncovalent.",
+  "om": [
+   "Looks only at the chain. Count the water too: overall entropy rises, and folding is spontaneous.",
+   "Folding is held by noncovalent interactions, not new covalent bonds.",
+   "Correct. Chain more ordered, water much less ordered, ΔG negative.",
+   "Reversible does not mean ΔG = 0. ΔG = 0 only at equilibrium.",
+   "The folded chain is more ordered, so its own entropy falls."
+  ]
+ },
+ {
+  "id": "v2-q21-2",
+  "stem": 21,
+  "level": "medium",
+  "vi": 2,
+  "vn": 2,
+  "week": 4,
+  "lo": "W4: thermodynamics and spontaneity",
+  "topic": "Thermodynamics of biological processes",
+  "q": "Cells make ATP from ADP and inorganic phosphate (ADP + Pi → ATP + H2O). Which statement best describes the thermodynamics of this process?",
+  "o": [
+   "ΔG < 0: it happens on its own because cells need ATP",
+   "ΔG > 0: it does not happen on its own and must be coupled to an exergonic process, such as H+ flowing down its gradient",
+   "ΔG > 0, so it can never happen in a cell",
+   "ΔG < 0, because forming a new bond always releases energy",
+   "Whether ΔG is positive or negative depends on whether the enzyme ATP synthase is present"
+  ],
+  "a": 1,
+  "why": "ATP hydrolysis is exergonic, so the reverse, ATP synthesis, is endergonic (ΔG > 0). It still happens in cells because it is coupled to a favourable process. In mitochondria and chloroplasts, H+ flowing down its gradient through ATP synthase pays for it.",
+  "om": [
+   "Need does not set ΔG. ATP synthesis is the reverse of an exergonic reaction.",
+   "Correct. Endergonic, made possible by coupling.",
+   "Endergonic reactions do happen in cells when coupled to exergonic ones.",
+   "Overall ΔG counts the bonds broken and the order created, not just one bond formed.",
+   "Enzymes change rate, never ΔG."
+  ]
+ },
+ {
+  "id": "v2-q24-1",
+  "stem": 24,
+  "level": "medium",
+  "vi": 1,
+  "vn": 2,
+  "week": 4,
+  "lo": "W4: how enzymes speed reactions",
+  "topic": "What an enzyme can and cannot do",
+  "q": "The reaction M → N has a ΔG of about +25 kJ/mol under conditions in the cell. A biotech startup claims it has engineered an enzyme so efficient that cells using it convert M into N with nothing else needed. Which is the best evaluation of this claim?",
+  "o": [
+   "Plausible: a fast enough enzyme can overcome a positive ΔG",
+   "Plausible: enzymes supply the energy that drives a reaction forward",
+   "Not possible: an enzyme lowers activation energy but does not change ΔG, so a reaction with positive ΔG still will not go forward unless it is coupled to an exergonic reaction",
+   "Not possible: enzymes only work on reactions whose ΔG is zero"
+  ],
+  "a": 2,
+  "why": "Enzymes change how fast a reaction reaches equilibrium, never which direction is favoured. With ΔG positive, M → N will not go forward on its own however good the enzyme. It would need coupling to something exergonic, such as ATP hydrolysis.",
+  "om": [
+   "Speed and direction are separate. No enzyme turns a positive ΔG negative.",
+   "Enzymes are not an energy source; they are unchanged after the reaction.",
+   "Correct. Enzymes do not change ΔG.",
+   "Enzymes speed up reactions with any ΔG; a negative ΔG is what makes the forward direction favourable."
+  ]
+ },
+ {
+  "id": "v2-q24-2",
+  "stem": 24,
+  "level": "medium",
+  "vi": 2,
+  "vn": 2,
+  "week": 4,
+  "lo": "W4: how enzymes speed reactions",
+  "topic": "What an enzyme can and cannot do",
+  "q": "Hydrolysis of the peptide bond in a dipeptide has a ΔG of about −10 kJ/mol, but without a catalyst it takes years. A biotech startup claims it has engineered an enzyme that makes this hydrolysis a million times faster. Which is the best evaluation of this claim?",
+  "o": [
+   "Not possible: if the reaction were favourable, it would already be fast",
+   "Not possible: enzymes decide whether a reaction happens, not how fast",
+   "Plausible, but only because the enzyme makes ΔG more negative",
+   "Plausible: the reaction is exergonic but has a high activation energy, and enzymes speed reactions by lowering activation energy"
+  ],
+  "a": 3,
+  "why": "Peptide bond hydrolysis is exergonic but very slow, because its activation energy is high. That is exactly the case an enzyme helps: by stabilizing the transition state it lowers the activation energy, and million-fold speed-ups are normal for enzymes. ΔG is unchanged.",
+  "om": [
+   "ΔG says which direction is favoured, not how fast. Activation energy sets the rate.",
+   "Backwards: enzymes change rate, not whether a reaction is favourable.",
+   "Enzymes never change ΔG.",
+   "Correct. Exergonic, slow, so an enzyme can speed it up."
+  ]
+ }
+]
