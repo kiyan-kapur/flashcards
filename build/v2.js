@@ -20,7 +20,7 @@ function mockReady(b){ return new Set(b.questions.filter(q=>q.stem).map(q=>q.ste
 function logAttempt(q, chose, ok, revealed){
   const b = bankOf();
   S.attempts.push({id:q.id, bank:b ? b.id : null, stem:q.stem || null, topic:q.topic, chose:chose, key:q.a, ok:!!ok,
-                   conf:S.bank.conf || null, rev:!!revealed, at:Date.now()});
+                   conf:S.bank.conf || null, rev:!!revealed, hints:S.bank.hintQ === q.id ? (S.bank.hintN || 0) : 0, at:Date.now()});
 }
 
 /* ---------- spacing (Step 5) ----------
@@ -77,11 +77,33 @@ function v2Order(pool, o){
   }
   return out;
 }
+// HARD calibration: variant 1 of each stem is problem-set level. The trap variants stay locked until variant 1 has been
+// answered right without pressing Guessing.
+function v1Of(b, stem){ return b.questions.find(x=>x.stem === stem && x.vi === 1); }
+function v1Right(b, stem){
+  const v = v1Of(b, stem);
+  return !!v && (S.attempts || []).some(a=> a.id === v.id && a.ok && a.conf !== "guess");
+}
+function lockedOut(b, q){ return q.level === "hard" && q.vi > 1 && !v1Right(b, q.stem); }
+function hintHTML(q){
+  if(!q.hint || S.bank.hintQ !== q.id || !S.bank.hintN) return "";
+  return '<div class="why-block"><div class="row"><b>Hint, step by step</b><ol style="margin:4px 0 0;padding-left:20px">'+
+    q.hint.slice(0, S.bank.hintN).map(t=>'<li style="margin:3px 0">'+esc(t)+'</li>').join("")+'</ol></div></div>';
+}
+function hintLabel(q){
+  const n = S.bank.hintQ === q.id ? S.bank.hintN : 0;
+  return n === 0 ? "Step-by-step hint" : n < q.hint.length ? "Next step (" + n + " of " + q.hint.length + ")" : "All steps shown";
+}
+function methodHTML(q){
+  return '<div class="row trap"><b>The method, step by step</b><ol style="margin:4px 0 0;padding-left:20px">'+
+    q.hint.map(t=>'<li style="margin:3px 0">'+esc(t)+'</li>').join("")+'</ol></div>';
+}
 function v2Mastered(id){ const c = (S.bankProg[id] || {}).conf || {}; return ((c.sure||{}).ok || 0) + ((c.fair||{}).ok || 0) > 0; }
 function v2Build(b, keepAt){
   const nMain = b.questions.filter(q=>q.level !== "jic").length;
-  S.bank.queue = v2Order(b.questions, {
-    len: b.mixJic ? Math.max(60, nMain) : b.questions.length,
+  const pool = b.questions.filter(q=> !lockedOut(b, q));
+  S.bank.queue = v2Order(pool, {
+    len: b.mixJic ? Math.max(60, nMain) : pool.length,
     seen: id=> (S.bankProg[id] || {}).seen || 0, mastered: v2Mastered,
     jicEvery: b.mixJic ? 6 : 0, first: keepAt,
     gap: b.mixJic ? undefined : Math.max(2, Math.ceil(new Set(b.questions.map(q=>q.stem)).size * 0.6))
@@ -96,6 +118,22 @@ function v2After(q, ok, conf){
   if(!b || !b.v2 || !q.stem) return;
   const sess = S.bank.sess || (S.bank.sess = {sureOk:{}});
   const Q = S.bank.queue, here = S.bank.qi;
+  if(q.level === "hard"){
+    // HARD: a miss, reveal or Guessing brings back variant 1 (never a harder one); a clean right answer on variant 1
+    // unlocks the trap variants for that stem and slots them in later in the session.
+    const v1 = v1Of(b, q.stem);
+    if(!ok || conf === "guess"){
+      for(let i = Math.min(Q.length - 1, here + 6); i > here; i--){ const x = b.questions.find(z=>z.id === Q[i]); if(x && x.stem === q.stem) Q.splice(i, 1); }
+      Q.splice(Math.min(here + 4 + Math.floor(Math.random()*3), Q.length), 0, v1.id);
+      return;
+    }
+    if(q.vi === 1 && !sess["unlocked" + q.stem]){
+      sess["unlocked" + q.stem] = true;
+      // one trap variant now, about 6 questions on; the rest join the next pass, where normal spacing applies
+      const t = b.questions.filter(x=>x.stem === q.stem && x.vi > 1).sort((x,y)=> x.vi - y.vi)[0];
+      if(t && !Q.slice(here + 1).includes(t.id)) Q.splice(Math.min(here + 6, Q.length), 0, t.id);
+    }
+  }
   if(!ok || conf === "guess"){
     const sibs = b.questions.filter(x=>x.stem === q.stem && x.id !== q.id);
     if(!sibs.length) return;

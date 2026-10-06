@@ -57,12 +57,12 @@ sub('items:["bio13-ex1","bio-hoq-1"]}',
 old_item = re.search(r'  "bio13-ex1":\{kind:"bank", bank:"bio13-ex1".*?\n(?=  "ch2-polls")', out, re.S).group(0)
 NOTE = ("Rebuilt 5 Oct from the redacted Exam 1. Every question is a fully specified version of one of the 25 redacted stems, "
         "split by level so you can drill where points leak: HARD first. Each card shows its level, its redacted stem and which "
-        "variant it is. Variants of one stem change the hidden variable, so learn the logic, not the letter. Miss one, reveal it, "
-        "or press Guessing, and the same stem comes back 4 to 6 questions later as a different variant. The old 165-question bank "
+        "variant it is. Variants of one stem change the hidden variable, so learn the logic, not the letter. In HARD, a miss, a reveal or "
+        "Guessing shows the method step by step and brings variant 1 of that stem back 4 to 6 questions later. The old 165-question bank "
         "is retired but its history feeds the Doubt Sheet tab.")
 sub(old_item,
     '  "bio13-hard":{kind:"bank", bank:"bio13-hard", folder:"bio", name:"BIO 0013 Exam 1 · HARD",\n'
-    '    sub:BANKS["bio13-hard"].questions.length+" questions on the 8 hardest stems: Enzyme D conditions, protease cuts, both gel stems, ring sugars, transition-state analogs, coupling, energy diagrams",\n'
+    '    sub:BANKS["bio13-hard"].questions.length+" questions on the 8 hardest stems. You start on variant 1 of each, problem-set level; the trap variants unlock once you get it right. Step-by-step hint on every card.",\n'
     '    exam:"2026-10-06T09:00:00", note:' + json.dumps(NOTE) + '},\n'
     '  "bio13-med":{kind:"bank", bank:"bio13-med", folder:"bio", name:"BIO 0013 Exam 1 · MEDIUM",\n'
     '    sub:BANKS["bio13-med"].questions.length+" questions on the 9 medium stems", exam:"2026-10-06T09:00:00"},\n'
@@ -121,7 +121,22 @@ sub("  if(v === \"doubts\") return renderDoubts();\n", "  if(v === \"doubts\") r
 sub("if(![\"practice\",\"review\",\"sa\",\"essay\",\"doubts\",\"weak\"].includes(S.bank.view)) S.bank.view = \"practice\";",
     "if(![\"practice\",\"review\",\"sa\",\"essay\",\"doubts\",\"weak\",\"dsheet\"].includes(S.bank.view)) S.bank.view = \"practice\";")
 
-assert "—" not in out[out.index("const BIO13_V2"):out.index("// A mock mirrors")], "em dash in new code"
+
+# 9. HARD calibration UI: step-by-step hint, numbered method after a miss, hint state reset per question
+sub("      (shown ? '' : noteBlock)+\n", "      (shown ? '' : noteBlock)+\n      (shown || !q.hint ? '' : hintHTML(q))+\n")
+sub("            '<button class=\"ghost\" id=\"bk-reveal\" style=\"padding:11px 15px\">Reveal answer</button>')+",
+    "            '<button class=\"ghost\" id=\"bk-reveal\" style=\"padding:11px 15px\">Reveal answer</button>'+\n"
+    "            (q.hint ? '<button class=\"ghost\" id=\"bk-hint\" style=\"padding:11px 15px\">'+hintLabel(q)+'</button>' : ''))+")
+sub("    '<div class=\"why-block\">'+\n      '<div class=\"row\"><b>Why</b>'+esc(q.why)+'</div>'+",
+    "    '<div class=\"why-block\">'+\n      (q.hint && !correct ? methodHTML(q) : '')+\n      '<div class=\"row\"><b>Why</b>'+esc(q.why)+'</div>'+")
+sub("  const rv = document.getElementById(\"bk-reveal\");\n",
+    "  const hb = document.getElementById(\"bk-hint\");\n"
+    "  if(hb) hb.onclick = ()=>{ if(S.bank.hintQ !== q.id){ S.bank.hintQ = q.id; S.bank.hintN = 0; } if(S.bank.hintN < q.hint.length) S.bank.hintN++; render(); };\n"
+    "  const rv = document.getElementById(\"bk-reveal\");\n")
+sub("  S.bank.answered = false; S.bank.revealed = false; S.bank.choice = null; S.bank.conf = null; S.bank.sel = null;\n",
+    "  S.bank.answered = false; S.bank.revealed = false; S.bank.choice = null; S.bank.conf = null; S.bank.sel = null; S.bank.hintN = 0; S.bank.hintQ = null;\n")
+
+assert "\u2014" not in out[out.index("const BIO13_V2"):out.index("// A mock mirrors")], "em dash in new code"
 os.makedirs(os.path.join(ROOT, "app"), exist_ok=True)
 open(os.path.join(ROOT, "app", "index.html"), "w").write(out)
 print("patched", len(bank), "questions;", len(out), "bytes")

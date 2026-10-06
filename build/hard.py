@@ -193,9 +193,9 @@ def lanes_dict(*bands):
     return dict(zip("ABCDE", bands))
 
 
-def hh(stem, vi, vn, P, S, a_, b_, ask, lanes, ans, why, om, flip, topic):
+def hh(stem, vi, vn, P, S, a_, b_, ask, lanes, ans, why, om, flip, topic, figname=None):
     assert P == S + a_ + b_
-    p = figs.gel(f"q{stem}-{vi}", lanes_dict(*lanes))
+    p = figs.gel(figname or f"q{stem}-{vi}", lanes_dict(*lanes))
     alt = "SDS-PAGE gel: ladder 50, 40, 30, 25, 20, 15, 10, 5 kDa. " + "; ".join(
         f"lane {L}: " + ", ".join(str(k) for k in sorted(v, reverse=True)) + " kDa" for L, v in lanes_dict(*lanes).items())
     add(stem, vi, vn, 2, LO_G, topic, HH.format(P=P, S=S, a=a_, b=b_) + ask, LANES, ans, why, om, flip, p, alt)
@@ -559,15 +559,159 @@ rcd(4, [dict(r=40, ts=52, p=15), dict(r=15, ts=120, p=55), dict(r=75, ts=130, p=
      "Both are uphill. They need coupling."],
     "If diagram 2 were coupled to ATP hydrolysis, it could go, with an enzyme carrying out the coupling.")
 
+
+# =============================== CALIBRATION (6 Oct): problem-set-level variant 1 per stem ===============================
+# Variant 1 is one idea, clean numbers, no stacked traps (Pset 2 Noelle / Kevin / Quixote style). Trap variants unlock in the
+# app only after variant 1 is right. Retired cards stay in the data as void so their history still feeds the Doubt Sheet.
+HINT = {
+ 8: ["Find the bond that holds the two subunits together: ionic (+ and - R groups), disulfide (two cysteines) or hydrophobic.",
+     "Match a treatment to that bond. Salt weakens ionic bonds. A reducing agent breaks disulfides. SDS plus heat breaks every noncovalent interaction (so it unfolds too) but not disulfides.",
+     "Read what the question wants: subunits apart only, or apart AND unfolded?",
+     "Cross out anything that cuts peptide bonds: that chops chains instead of releasing whole monomers."],
+ 10: ["Find the N-terminus (free amino group) and the C-terminus (free carboxyl group).",
+      "Mark every residue the enzyme targets.",
+      "C-terminal side = the bond between that residue and the next one toward the C-terminus. N-terminal side = the bond on its other side.",
+      "A target sitting at the very end may have no bond on that side, so nothing is cut there."],
+ 11: ["List the chains in purified mature H: two pieces held by one disulfide. Nothing else is in a purified sample.",
+      "Does the prep break the disulfide? SDS and heat do not. A reducing agent does.",
+      "Write the size of each separate unit that runs on the gel.",
+      "One band per different size. Find the lane with exactly those sizes."],
+ 12: ["List every H-derived chain in the sample at that moment: unprocessed pro-H, mature H, the released segment.",
+      "Apply the prep: a reducing agent splits mature H into its two pieces; pro-H stays full length either way.",
+      "Write the sizes. One band per different size.",
+      "Find the lane with exactly those bands, no more, no fewer."],
+ 15: ["Find the anomeric carbon: the ring carbon bonded to the ring O and to an OH.",
+      "Does that carbon carry an H? H = it was an aldehyde (aldose). A CH2OH and no H = it was a ketone (ketose).",
+      "Count every carbon, inside the ring and outside it. The ring O is not a carbon.",
+      "Combine: aldo or keto + the carbon count (5 = pentose, 6 = hexose)."],
+ 22: ["Which does the active site grip most tightly: the substrate or the transition state?",
+      "Can this molecule turn into product and leave?",
+      "If it sits in the active site and never leaves, what happens to substrate trying to get in?",
+      "Remember: enzymes and the things that block them change rate, never ΔG."],
+ 23: ["Are the two reactions linked through a shared intermediate made by one enzyme? If not, there is no coupling.",
+      "If they are linked, add the two ΔG values.",
+      "Negative total: the overall reaction goes forward. Positive total: it does not.",
+      "Enzymes never change ΔG. Removing product can pull a reaction forward."],
+ 25: ["For each diagram, compare products with reactants: lower = downhill (ΔG negative), higher = uphill (ΔG positive).",
+      "Uphill reactions need coupling. No enzyme by itself can make them go.",
+      "For downhill ones, measure the hump from reactants to peak: small = goes on its own, big = needs an enzyme.",
+      "Answer exactly the category the question asks for."],
+}
+METHOD = {k: v for k, v in HINT.items()}   # the hint steps are the method; after a miss they are shown all at once, numbered
+
+Q_OLD = list(Q); Q.clear()
+
+p8 = figs.amino_panel("q8-c1", "C")[0]
+add(8, 1, 4, 2, LO_Q, "Quaternary structure: what breaks an interface",
+    "Enzyme D, from a gut bacterium, is a homodimer: two identical subunits, each one polypeptide of 310 amino acids. Where the "
+    "subunits touch, cysteine 88 on one subunit forms a disulfide bond with cysteine 142 on the other. These disulfides are the only "
+    "bonds holding the two subunits together. Each subunit's own fold is held by a hydrophobic core and hydrogen bonds. Cysteine is "
+    "drawn below.\n\nWhich treatment would separate the dimers into monomers, while the monomers stay folded?",
+    ["Boiling in SDS", "Adding a reducing agent at room temperature", "Adding trypsin, which cuts peptide bonds",
+     "Adding more of the enzyme's substrate"], 1,
+    "The subunits are held by disulfide bonds, and only a reducing agent breaks those. At room temperature with no SDS, the "
+    "hydrophobic core and hydrogen bonds inside each subunit are untouched, so the monomers stay folded.",
+    ["SDS plus heat unfolds the subunits and does not break disulfides, so they stay linked.",
+     "Correct. The reducing agent breaks the S-S bonds and nothing unfolds.",
+     "Cutting peptide bonds chops the chains instead of releasing whole monomers.",
+     "Substrate binds the active site; it does not break bonds between subunits."],
+    "If the subunits were held by an ionic bond instead, a reducing agent would do nothing.",
+    p8, "Skeletal structure, neutral form: cysteine (side chain CH2-SH).")
+
+p10, _ = figs.peptide("q10-c1", "GKAS")
+add(10, 1, 5, 2, LO_P, "Protease cut sites and peptide orientation",
+    "Trypsin hydrolyzes peptide bonds on the C-terminal side of lysine (Lys) and arginine (Arg). The tetrapeptide drawn below is "
+    "Gly-Lys-Ala-Ser, written from the N-terminus to the C-terminus. If it is fully digested by trypsin, what products form?",
+    ["Gly + Lys-Ala-Ser", "Gly-Lys + Ala-Ser", "Gly-Lys-Ala + Ser", "No change: trypsin cannot cut it"], 1,
+    "The only target is Lys, at position 2. Its C-terminal side is the bond between Lys and Ala. One cut gives two dipeptides: "
+    "Gly-Lys and Ala-Ser.",
+    ["That cut is on the N-terminal side of Lys.", "Correct. One cut, right after Lys.",
+     "Ser is not a target.", "Lys is a target, and it has a residue on its C-terminal side."],
+    "If the peptide were Gly-Ala-Ser-Lys, Lys would be the last residue with nothing after it, and nothing would be cut.",
+    p10, "Bond-line tetrapeptide Gly-Lys-Ala-Ser, neutral form, free amino group at the N-terminus and free carboxyl group at the C-terminus.")
+
+hh(11, 1, 3, 30, 6, 14, 10, "Purified mature H is boiled in SDS with a reducing agent. Which lane best represents the expected result?",
+   [[24], [30], [14, 10], [30, 24], [6]], 2,
+   "Mature H is two chains, 14 and 10 kDa, held by one disulfide. The reducing agent breaks it, so the chains run apart: two bands, "
+   "at 14 and 10 kDa.",
+   ["Forgot that the reducing agent breaks the disulfide.", "That is pro-H; mature H has had its middle cut out.",
+    "Correct. Two chains, two sizes, two bands.", "Purified mature H contains no pro-H.",
+    "That is the removed segment, which is not in purified mature H."],
+   "Without the reducing agent, mature H stays in one piece: one band at 24 kDa.",
+   "SDS-PAGE: disulfides and reducing agent", figname="q11-c1")
+Q[-1]["id"] = "v2-q11-c1"
+
+hh(12, 1, 5, 30, 6, 14, 10,
+   "A sample is taken at the moment the activating enzyme is added, before any pro-H has been processed. It is boiled in SDS without "
+   "a reducing agent. Which lane best represents the expected result?",
+   [[24, 6], [30], [14, 10, 6], [30, 24, 6], [24]], 1,
+   "Nothing has been processed yet, so the only H-derived chain is pro-H: one band at 30 kDa.",
+   ["That is the end of the reaction: mature H plus the segment.", "Correct. Only pro-H exists yet.",
+    "That is the end of the reaction with a reducing agent.", "That is halfway through.",
+    "Mature H does not exist yet."],
+   "Halfway through, without a reducing agent, you would see 30, 24 and 6 kDa.",
+   "SDS-PAGE: mixtures during processing", figname="q12-c1")
+Q[-1]["id"] = "v2-q12-c1"
+
+add(22, 1, 3, 4, LO_E, "Transition-state analogs",
+    TS + "Researchers make a stable molecule shaped like the transition state of enzyme E's reaction, but it cannot react. What will "
+    "this molecule most likely do when added to enzyme E and its substrate?",
+    ["Bind E's active site more tightly than the substrate does and block it, slowing the reaction",
+     "Speed up the reaction", "Make ΔG of the reaction more negative", "Nothing, because it cannot react"], 0,
+    "The active site grips the transition state more tightly than the substrate. A stable look-alike gets that tight grip but never "
+    "turns into product, so it stays in the active site and keeps substrate out: a competitive inhibitor. The reaction slows.",
+    ["Correct. Tight binding, active site blocked, slower reaction.",
+     "It never becomes product, so it only takes up active sites.",
+     "Enzymes and inhibitors never change ΔG.",
+     "Not reacting is exactly why it stays bound and blocks the site."],
+    "If the molecule looked like the substrate instead, it would still compete, but it would bind less tightly.")
+
+p25 = figs.energy("q25-c1", [dict(r=60, ts=70, p=20), dict(r=60, ts=140, p=20), dict(r=20, ts=80, p=60), dict(r=20, ts=140, p=60)])
+add(25, 1, 4, 4, LO_R, "Reaction coordinate diagrams: enzyme vs coupling",
+    "Each diagram below is a different reaction, all drawn on the same free-energy scale. A hump (activation energy) of 20 units or "
+    "less is crossed quickly without an enzyme.\n\nWhich diagram shows a reaction that will happen in a cell only if an enzyme is "
+    "present? (An enzyme alone is enough, and without one it will not happen.)",
+    ["Diagram 1", "Diagram 2", "Diagram 3", "Diagram 4"], 1,
+    "Diagrams 1 and 2 both run downhill (60 to 20), so both are spontaneous. Diagram 1's hump is small (10), so it goes on its own. "
+    "Diagram 2's hump is big (80), so it needs an enzyme. Diagrams 3 and 4 run uphill, and an enzyme alone can never make an uphill "
+    "reaction go.",
+    ["Downhill with a small hump: it goes on its own.", "Correct. Downhill, big hump.",
+     "Uphill: it needs coupling, not just an enzyme.", "Biggest hump, but uphill: an enzyme alone cannot make it go."],
+    "If the question asked which need coupling, the answer would be 3 and 4.",
+    p25, "Four reaction coordinate diagrams on one free-energy axis: 1 reactants 60, peak 70, products 20; 2 reactants 60, peak 140, "
+    "products 20; 3 reactants 20, peak 80, products 60; 4 reactants 20, peak 140, products 60.")
+
+for q in Q:
+    if q["id"].endswith("-1") and q["stem"] in (8, 10, 22, 25):
+        q["id"] = q["id"][:-2] + "-c1"
+NEW = {q["stem"]: q for q in Q}
+RETIRE = {"v2-q8-2", "v2-q10-1", "v2-q11-1", "v2-q12-3", "v2-q22-1", "v2-q25-1"}
+ORDER = {8: ["v2-q8-1", "v2-q8-3", "v2-q8-4"], 10: ["v2-q10-2", "v2-q10-3", "v2-q10-4", "v2-q10-5"],
+         11: ["v2-q11-2", "v2-q11-3"], 12: ["v2-q12-1", "v2-q12-2", "v2-q12-4", "v2-q12-5"],
+         15: ["v2-q15-1", "v2-q15-2", "v2-q15-3", "v2-q15-4", "v2-q15-5"], 22: ["v2-q22-2", "v2-q22-3"],
+         23: ["v2-q23-1", "v2-q23-2", "v2-q23-3", "v2-q23-4"], 25: ["v2-q25-2", "v2-q25-3", "v2-q25-4"]}
+byid = {q["id"]: q for q in Q_OLD}
+Q.clear()
+for stem in [8, 10, 11, 12, 15, 22, 23, 25]:
+    seq = ([NEW[stem]] if stem in NEW else []) + [byid[i] for i in ORDER[stem]]
+    for i, q in enumerate(seq, 1):
+        q["vi"], q["vn"], q["hint"] = i, len(seq), HINT[stem]
+        q["calibrated"] = (i == 1)
+        Q.append(q)
+for i in RETIRE:
+    r = dict(byid[i]); r["status"] = "void"; r["vi"] = 0; Q.append(r)
+
 if __name__ == "__main__":
     import json, collections
-    c = collections.Counter(q["stem"] for q in Q)
+    c = collections.Counter(q["stem"] for q in Q if q.get("status") != "void")
     print(len(Q), dict(c))
     assert dict(c) == {8: 4, 10: 5, 11: 3, 12: 5, 15: 5, 22: 3, 23: 4, 25: 4}
     for q in Q:
-        assert q["vn"] == c[q["stem"]]
+        assert q.get("status") == "void" or q["vn"] == c[q["stem"]]
         txt = q["q"] + " ".join(q["o"]) + q["why"] + " ".join(q["om"]) + q["flip"]
         assert "—" not in txt and "–" not in txt, q["id"]
+    figsrc = [q["fig"]["src"] for q in Q if q.get("status") != "void" and "fig" in q]
+    assert len(figsrc) == len(set(figsrc)), "two active cards share a figure file"
     json.dump(Q, open("build/hard.json", "w"), ensure_ascii=False, indent=1)
     for q in Q:
         if "fig" in q:
