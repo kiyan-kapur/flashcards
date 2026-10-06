@@ -9,11 +9,11 @@ const srv = http.createServer((req, res) => { const u = decodeURIComponent(req.u
   const errs = [], missing = []; pg.on('pageerror', e => errs.push(String(e)));
   pg.on('response', r => { if (r.status() === 404 && r.url().includes('/fig/v2/')) missing.push(r.url()); });
   await pg.goto('http://localhost:8766/'); await pg.waitForTimeout(600);
-  for (const bank of ['bio13-hard', 'bio13-med', 'bio13-easy']) {
+  for (const bank of ['bio13-hard', 'bio13-med', 'bio13-easy', 'bio13-jic']) {
     const n = await pg.evaluate(async bk => { openItem(bk); const ids = bankOf().questions.map(q => q.id); let ok = 0;
       for (const id of ids) { S.bank.queue = [id]; S.bank.qi = 0; S.bank.answered = false; S.bank.revealed = false; S.bank.sel = null; render();
         const q = bankOf().questions[0] && bankOf().questions.find(x => x.id === id);
-        if (!document.querySelector('.tagrow .tag').textContent.startsWith(q.level.toUpperCase())) throw new Error('tag ' + id);
+        if (!document.querySelector('.tagrow .tag').textContent.startsWith(q.level === 'jic' ? 'JUST IN CASE' : q.level.toUpperCase())) throw new Error('tag ' + id);
         S.bank.answered = true; S.bank.choice = q.a; render();
         if (document.querySelectorAll('.why-block .row').length < 2) throw new Error('why ' + id); ok++; }
       return ok; }, bank);
