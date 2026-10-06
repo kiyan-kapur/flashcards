@@ -52,7 +52,7 @@ sub(old_bank,
     '  "bio13-jic":{id:"bio13-jic", name:"Just in case", course:"BIO 0013", questions:v2Level("jic"), shorts:[], longs:[], exam:"2026-10-06T09:00:00", target:96, v2:true, units:WEEKS, ctx:BIO_CTX},\n'
     '  "bio13-ex1":{id:"bio13-ex1", name:"All levels mixed", course:"BIO 0013", questions:BIO13_V2.filter(q=>q.status !== "void"), shorts:[], longs:[], exam:"2026-10-06T09:00:00", target:96, mock25:true, v2:true, mixJic:true, units:WEEKS, ctx:BIO_CTX},\n')
 sub('items:["bio13-ex1","bio-hoq-1"]}',
-    'items:["bio13-hard","bio13-med","bio13-easy","bio13-jic","bio13-ex1","bio-hoq-1"].filter(id=> !BANKS[id] || BANKS[id].questions.length)}')
+    'items:["bio13-hard","bio13-med","bio13-easy","bio13-jic","bio-hoq-1"].filter(id=> !BANKS[id] || BANKS[id].questions.length)}')
 
 old_item = re.search(r'  "bio13-ex1":\{kind:"bank", bank:"bio13-ex1".*?\n(?=  "ch2-polls")', out, re.S).group(0)
 NOTE = ("Rebuilt 5 Oct from the redacted Exam 1. Every question is a fully specified version of one of the 25 redacted stems, "

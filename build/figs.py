@@ -204,3 +204,39 @@ def energy(name, diagrams, ymax=160):
     path = os.path.join(FIG, name + ".svg")
     open(path, "w").write("\n".join(x for x in s if x))
     return path
+
+
+def molecule(name, smiles, formula):
+    """Unnamed (invented) molecule from SMILES, neutral form, with a formula assert."""
+    mol = Chem.MolFromSmiles(smiles)
+    assert CalcMolFormula(mol) == formula, (name, CalcMolFormula(mol), formula)
+    rdDepictor.Compute2DCoords(mol)
+    path = os.path.join(FIG, name + ".svg")
+    open(path, "w").write(_mol_svg(mol, 560, 300))
+    return path
+
+
+def table(name, head, rows, note=""):
+    """Plain data table as SVG, so the numbers in the picture come from the question's own data."""
+    cw = [max(len(str(r[i])) for r in [head] + rows) * 11 + 34 for i in range(len(head))]
+    W, rh = sum(cw) + 20, 40
+    H = rh * (len(rows) + 1) + 20 + (26 if note else 0)
+    s = [f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}" font-family="Helvetica, Arial, sans-serif">',
+         f'<rect width="{W}" height="{H}" fill="#ffffff"/>']
+    y = 10
+    for ri, r in enumerate([head] + rows):
+        x = 10
+        if ri == 0:
+            s.append(f'<rect x="10" y="{y}" width="{W-20}" height="{rh}" fill="#e9eef0"/>')
+        for i, c in enumerate(r):
+            s.append(f'<text x="{x+12}" y="{y+26}" font-size="17" font-weight="{"bold" if ri == 0 else "normal"}" fill="#111" '
+                     f'font-family="{"Courier New, monospace" if "5\'" in str(c) else "Helvetica, Arial, sans-serif"}">{str(c).replace("&", "&amp;")}</text>')
+            x += cw[i]
+        s.append(f'<line x1="10" x2="{W-10}" y1="{y+rh}" y2="{y+rh}" stroke="#c5cfd3"/>')
+        y += rh
+    if note:
+        s.append(f'<text x="12" y="{y+20}" font-size="13" fill="#555">{note}</text>')
+    s.append("</svg>")
+    path = os.path.join(FIG, name + ".svg")
+    open(path, "w").write("\n".join(s))
+    return path
